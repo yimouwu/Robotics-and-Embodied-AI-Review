@@ -40,7 +40,8 @@
       </ul>
       <li><a href="#Planning">1.3 Planning - 规划</a></li>
       <ul>
-        <li><a href="#Markovian-Decision-Process">1.1.2 Markovian Decision Process - 马尔可夫决策过程</a></li>
+        <li><a href="#Markovian-Decision-Process">1.3.1 Markovian Decision Process - 马尔可夫决策过程</a></li>
+        <li><a href="#Model-Predictive-Control">1.3.2 Model Predictive Control - 模型预测控制</a></li>
       </ul>
       <li><a href="#Perception">1.4 Perception - 感知</a></li>
       <li><a href="#Learning">1.5 Learning - 学习</a></li>
@@ -83,8 +84,10 @@
 
 # 0. Useful Info - 优质资源链接 <a id="links"></a>
 
+###### - [具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink) - 具身智能知识库
 ###### - [Embodied-AI-Guide](https://github.com/tianxingchen/Embodied-AI-Guide) - 具身智能系统性学习指南
-###### - [具身智能招贤榜](https://github.com/StarCycle/Awesome-Embodied-AI-Job) - 行业招聘信息
+###### - [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI) - 具身经典开源项目
+###### - [具身智能招贤榜](https://github.com/StarCycle/Awesome-Embodied-AI-Job) - 业界学界招聘信息
 <!-- ###### - [Writing AI Conference Papers: A Handbook for Beginners](https://github.com/hzwer/WritingAIPaper) - AI方向如何写论文
 ###### - [Hyperparameter-Optimization-of-Machine-Learning-Algorithms](https://github.com/LiYangHart/Hyperparameter-Optimization-of-Machine-Learning-Algorithms) - 机器学习算法的超参数优化 -->
 
@@ -142,6 +145,7 @@
 >文中部分内容可能包括我们有access权限但是不对公众开放的内容（比如部分论文的PDF），仅做学术分享，如有侵权，请您第一时间联系我们删除。请勿将本仓库中的任何内容用作商业目的。如有相应部分因我们疏忽（比如引用了相关的内容但是忘记标明出处），请麻烦联系我们，我们会第一时间进行update。
 
 本文转载/引用了一下一些团体/个人的内容，我们对他们的贡献表示感谢，以下是引用列表：
+
 [1] Feishu Docs [木木具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink)，[2] Github repo [Embodied-AI-Guide](https://github.com/TianxingChen/Embodied-AI-Guide), 
 
 ####
