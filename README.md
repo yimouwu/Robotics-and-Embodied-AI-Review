@@ -40,17 +40,39 @@
       </ul>
       <li><a href="#Planning">1.3 Planning - 规划</a></li>
       <ul>
-        <li><a href="#Trajectory">1.3.1 Trajectory - 轨迹</a></li>
-        <li><a href="#Markovian-Decision-Process">1.3.2 Markovian Decision Process - 马尔可夫决策过程</a></li>
-        <li><a href="#Model-Predictive-Control">1.3.3 Model Predictive Control - 模型预测控制</a></li>
+        <li><a href="#Intro-to-Trajectory-and-Motion-Planning">1.3.1 Intro to Trajectory and Motion Planning - 轨迹与运动规划入门</a></li>
+        <li><a href="#Search-Based-Methods">1.3.2 Search-Based Methods - 基于搜索的方法</a></li>
+        <li><a href="#Sampling-Based-Methods">1.3.3 Sampling-Based Methods - 基于采样的方法</a></li>
+        <li><a href="#Geometry-Based-Methods">1.3.4 Geometry-Based Methods - 基于几何学的方法</a></li>
+        <li><a href="#Optimization-Based-Methods">1.3.5 Optimization-Based Methods - 基于最优化的方法</a></li>
+        <ul>
+        <li><a href="#Model-Predictive-Control">1.3.5.1 Model Predictive Control - 模型预测控制</a></li>
+        <ul>
+          <li><a href="#Markovian-Decision-Process">1.3.5.1.1 Markovian Decision Process - 马尔可夫决策过程</a></li>
+        </ul>
+        </ul>
       </ul>
       <li><a href="#Perception">1.4 Perception - 感知</a></li>
       <ul>
         <li><a href="#Scene-Understanding">1.4.1 Computer Vision - 计算机视觉</a></li>
         <ul>
-          <li><a href="#Foundation-Models">1.4.1 Foundation Models - 基础模型</a></li>
+          <li><a href="#2D-Vision">1.4.1.1 2D Vision - 二维视觉</a></li>
+          <li><a href="#3D-Vision">1.4.1.2 3D Vision - 三维视觉</a></li>
+          <li><a href="#3D-Vision">1.4.1.3 4D Vision - 四维视觉</a></li>
+          <li><a href="#Subdivision-of-application-domains">1.4.1.4 Subdivision of application domains - 应用领域细分</a></li>
+          <ul>
+            <li><a href="#Visual-Prompting">1.4.1.4.1 Visual Prompting - 视觉提示</a></li>
+            <li><a href="#Affordance-Grounding">1.4.1.4.2 Affordance Grounding - 可供性锚定</a></li>
+            <ul>
+              <li><a href="#Two-Dimension">1.4.1.4.2.1 2D - 二维</a></li>
+              <li><a href="#Three-Dimension">1.4.1.4.2.2 3D - 三维</a></li>
+            </ul>
+          </ul>
         </ul>
         <li><a href="#Scene-Understanding">1.4.2 Scene Understanding - 场景理解</a></li>
+        <ul>
+        <li><a href="#Scene-Understanding">1.4.2.1 Segmentation - 图像分割</a></li>
+        </ul>
       </ul>
       <li><a href="#Learning">1.5 Learning - 学习</a></li>
       <ul>
@@ -115,40 +137,171 @@
 # 1. Research Areas Guide - 研究领域入门指南 <a id="research-areas-guide"></a>
 
 ## 1.1 Fundamentals of Robotics - 机器人学基础 <a id="Fundamentals-of-Robotics"></a>
-(Coming Soon...)
-### 1.1.1 Simulators - 仿真器 <a id="simulators"></a>
-(Coming Soon...)
 
+### 1.1.1 Introduction - 基本概念入门 <a id="Markovian-Decision-Process"></a>
+(Coming Soon...)  
+
+### 1.1.2 Mathematical Concepts and Spatial Transformation - 数学概念与空间转换 <a id="Mathematical-Concepts-and-Spatial-Transformation"></a>
+(Coming Soon...)  
+
+### 1.1.3 Forward Kinematics - 正向运动学 <a id="Forward-Kinematics"></a>
+(Coming Soon...)  
+
+### 1.1.4 Inverse Kinematics - 逆向运动学 <a id="Inverse-Kinematics"></a>
+(Coming Soon...)  
+
+### 1.1.5 Velocity Kinematics - 速度运动学 <a id="Velocity-Kinematics"></a>
+(Coming Soon...)  
+
+
+
+## 1.2 Control - 控制 <a id="Control"></a>
+
+### 1.2.1 Concepts - 概念与术语 <a id="Control-Concepts"></a>
+(Coming Soon...)  
+
+### 1.2.2 Control System - 控制系统 <a id="Control-System"></a>
+(Coming Soon...)  
+
+### 1.2.3 Controller - 控制器 <a id="Controller"></a>
+
+#### 1.2.3.1 LQR Controller - LQR 控制器 <a id="LQR"></a>
+(Coming Soon...)  
+
+#### 1.2.3.2 P.I.D. Controller - P.I.D. 控制器 <a id="PID"></a>
+(Coming Soon...)  
+
+
+
+## 1.3 Planning - 规划 <a id="Planning"></a>
+
+### 1.3.1 Intro to Trajectory and Motion Planning - 轨迹与运动规划入门 <a id="Intro-to-Trajectory-and-Motion-Planning"></a>
+(Coming Soon...)  
+
+### 1.3.2 Search-Based Methods - 基于搜索的方法 <a id="Search-Based-Methods"></a>
+(Coming Soon...)  
+
+### 1.3.3 Sampling-Based Methods - 基于采样的方法 <a id="Sampling-Based-Methods"></a>
+(Coming Soon...)  
+
+### 1.3.4 Geometry-Based Methods - 基于几何学的方法 <a id="Geometry-Based-Methods"></a>
+(Coming Soon...)  
+
+### 1.3.5 Optimization-Based Methods - 基于最优化的方法 <a id="Optimization-Based-Methods"></a>
+(Coming Soon...)  
+
+#### 1.3.5.1 Model Predictive Control - 模型预测控制 <a id="Model-Predictive-Control"></a>
+(Coming Soon...)  
+
+##### 1.3.5.1.1 Markovian Decision Process - 马尔可夫决策过程 <a id="Markovian-Decision-Process"></a>
+(Coming Soon...)  
+
+
+
+## 1.4 Perception - 感知 <a id="Perception"></a>
+
+### 1.4.1 Computer Vision - 计算机视觉 <a id="Scene-Understanding"></a>
+
+#### 1.4.1.1 2D Vision - 二维视觉 <a id="2D-Vision"></a>
+(Coming Soon...)  
+
+#### 1.4.1.2 3D Vision - 三维视觉 <a id="3D-Vision"></a>
+(Coming Soon...)  
+
+#### 1.4.1.3 4D Vision - 四维视觉 <a id="4D-Vision"></a>
+(Coming Soon...)  
+
+#### 1.4.1.4 Subdivision of Application Domains - 应用领域细分 <a id="Subdivision-of-application-domains"></a>
+
+##### 1.4.1.4.1 Visual Prompting - 视觉提示 <a id="Visual-Prompting"></a>
+(Coming Soon...)  
+
+##### 1.4.1.4.2 Affordance Grounding - 可供性锚定 <a id="Affordance-Grounding"></a>
+
+###### 1.4.1.4.2.1 2D - 二维 <a id="Two-Dimension"></a>
+(Coming Soon...)  
+
+###### 1.4.1.4.2.2 3D - 三维 <a id="Three-Dimension"></a>
+(Coming Soon...)  
+
+
+
+### 1.4.2 Scene Understanding - 场景理解 <a id="Scene-Understanding"></a>
+
+#### 1.4.2.1 Segmentation - 图像分割 <a id="Segmentation"></a>
+(Coming Soon...)  
+
+
+
+## 1.5 Learning - 学习 <a id="Learning"></a>
+
+### 1.5.1 Intro to Machine Learning - 机器学习入门 <a id="Intro-to-Machine-Learning"></a>
+(Coming Soon...)  
+
+### 1.5.2 Reinforcement Learning - 强化学习 <a id="Reinforcement-Learning"></a>
+(Coming Soon...)  
+
+### 1.5.3 Imitation Learning - 模仿学习 <a id="Imitation-Learning"></a>
+(Coming Soon...)  
+
+
+
+## 1.6 Multi-Robot Systems - 多机器人系统 <a id="Multi-Robot-Systems"></a>
+(Coming Soon...)  
+
+
+
+## 1.7 Simulation and Modeling - 仿真与建模 <a id="Simulation-and-Modeling"></a>
+(Coming Soon...)  
+
+
+
+## 1.8 Physical Interaction - 物理交互 <a id="Physical-Interaction"></a>
+(Coming Soon...)  
+
+
+
+## 1.9 Ethics and Social Implications - 伦理与社会问题 <a id="Ethics-and-Social-Implications"></a>
+(Coming Soon...)  
 
 
 
 # 2. Tools - 工具 <a id="tools"></a>
-(Coming Soon...)
-## 2.1 Software - 软件 <a id="software"></a>
-(Coming Soon...)
-### 2.1.1 Simulators - 仿真器 <a id="simulators"></a>
-(Coming Soon...)
-### 2.1.2 Robot Description - 机器人描述格式 <a id="Robot-Description"></a>
-(Coming Soon...)
 
+## 2.1 Software - 软件 <a id="software"></a>
+
+### 2.1.1 General Tools - 常用工具 <a id="General-Tools"></a>
+(Coming Soon...)  
+
+### 2.1.2 Simulators - 仿真器 <a id="simulators"></a>
+(Coming Soon...)  
+
+### 2.1.3 Robot Description - 机器人描述格式 <a id="Robot-Description"></a>
+(Coming Soon...)  
 
 
 
 ## 2.2 Hardware - 硬件 <a id="hardware"></a>
-(Coming Soon...)
-
-
-
+(Coming Soon...)  
 
 
 
 # 3. Literature Review - 文献综述 <a id="literature-review"></a>
 
 ## 3.1 Traditional Control - 传统控制 <a id="Traditional-Control"></a>
-(Coming Soon...)
+(Coming Soon...)  
 
 ## 3.2 Model Predictive Control - 模型预测控制 <a id="Model-Predictive-Control"></a>
-(Coming Soon...)
+(Coming Soon...)  
+
+## 3.3 Vision Language Model - 视觉-语言模型 <a id="Vision-Language-Model"></a>
+(Coming Soon...)  
+
+## 3.4 Vision Language Action Model - 视觉-语言-动作模型 <a id="Vision-Language-Action"></a>
+(Coming Soon...)  
+
+## 3.5 Dual System - 双系统 <a id="Dual-System"></a>
+(Coming Soon...)  
 
 
 # 4. Paper List Links - 论文列表链接 <a id="paper-list-link"></a>
@@ -164,7 +317,7 @@
 
 本文转载/引用了一下一些团体/个人的内容，我们对他们的贡献表示感谢，以下是引用列表：
 
-[1] Feishu Docs [木木具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink)，[2] Github repo [Embodied-AI-Guide](https://github.com/TianxingChen/Embodied-AI-Guide)，[3] Github repo [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI)，
+[1] Course Materials from CUHK, Shenzhen [Introduction to Robotics](https://github.com/yimouwu/Robotics-and-Embodied-AI-Review/tree/main/Awesome%20Course%20Materials/Introduction%20to%20Robotics)，[2] Feishu Docs [木木具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink)，[3] Github repo [Embodied-AI-Guide](https://github.com/TianxingChen/Embodied-AI-Guide)，[4] Github repo [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI)
 
 ####
 # About us - 关于我们
