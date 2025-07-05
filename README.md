@@ -40,11 +40,24 @@
       </ul>
       <li><a href="#Planning">1.3 Planning - 规划</a></li>
       <ul>
-        <li><a href="#Markovian-Decision-Process">1.3.1 Markovian Decision Process - 马尔可夫决策过程</a></li>
-        <li><a href="#Model-Predictive-Control">1.3.2 Model Predictive Control - 模型预测控制</a></li>
+        <li><a href="#Trajectory">1.3.1 Trajectory - 轨迹</a></li>
+        <li><a href="#Markovian-Decision-Process">1.3.2 Markovian Decision Process - 马尔可夫决策过程</a></li>
+        <li><a href="#Model-Predictive-Control">1.3.3 Model Predictive Control - 模型预测控制</a></li>
       </ul>
       <li><a href="#Perception">1.4 Perception - 感知</a></li>
+      <ul>
+        <li><a href="#Scene-Understanding">1.4.1 Computer Vision - 计算机视觉</a></li>
+        <ul>
+          <li><a href="#Foundation-Models">1.4.1 Foundation Models - 基础模型</a></li>
+        </ul>
+        <li><a href="#Scene-Understanding">1.4.2 Scene Understanding - 场景理解</a></li>
+      </ul>
       <li><a href="#Learning">1.5 Learning - 学习</a></li>
+      <ul>
+        <li><a href="#Intro-to-Machine-Learning">1.5.1 Intro to Machine Learning - 机器学习入门</a></li>
+        <li><a href="#Reinforcement-Learning">1.5.2 Reinforcement Learning - 强化学习</a></li>
+        <li><a href="#Imitation-Learning">1.5.3 Imitation Learning - 模仿学习</a></li>
+      </ul>
       <li><a href="#Multi-Robot-Systems">1.6 Multi-Robot Systems - 多机器人系统</a></li>
       <li><a href="#Simulation-and-Modeling">1.7 Simulation and Modeling - 仿真与建模</a></li>
       <li><a href="#Physical-Interaction">1.8 Physical Interaction - 物理交互</a></li>
@@ -56,8 +69,9 @@
     <ul>
       <li><a href="#software">2.1 Software - 软件</a>
         <ul>
-          <li><a href="#simulators">2.1.1 Simulators - 仿真器</a></li>
-          <li><a href="#Robot-Description">2.1.2 Robot Description - 机器人描述格式</a></li>
+          <li><a href="#General-Tools">2.1.1 General Tools - 常用工具</a></li>
+          <li><a href="#simulators">2.1.2 Simulators - 仿真器</a></li>
+          <li><a href="#Robot-Description">2.1.3 Robot Description - 机器人描述格式</a></li>
         </ul>
       </li>
       <li><a href="#hardware">2.2 Hardware - 硬件</a>
@@ -69,6 +83,10 @@
     <ul>
       <li><a href="#Traditional-Control">3.1 Traditional Control - 传统控制</a></li>
       <li><a href="#Model-Predictive-Control">3.2 Model Predictive Control - 模型预测控制</a></li>
+      <li><a href="#Vision-Language-Model">3.3 Vision Language Model - 视觉-语言模型</a></li>
+      <li><a href="#Vision-Language-Action">3.4 Vision Language Action Model - 视觉-语言-动作模型</a></li>
+      <li><a href="#Dual-System">3.5 Dual System - 双系统</a></li>
+      <li><a href="#Model-Predictive-Control">3.3 Segmentation - 图像分割</a></li>
     </ul>
   </li>
   
@@ -146,7 +164,7 @@
 
 本文转载/引用了一下一些团体/个人的内容，我们对他们的贡献表示感谢，以下是引用列表：
 
-[1] Feishu Docs [木木具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink)，[2] Github repo [Embodied-AI-Guide](https://github.com/TianxingChen/Embodied-AI-Guide), 
+[1] Feishu Docs [木木具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink)，[2] Github repo [Embodied-AI-Guide](https://github.com/TianxingChen/Embodied-AI-Guide)，[3] Github repo [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI)，
 
 ####
 # About us - 关于我们
