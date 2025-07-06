@@ -143,13 +143,9 @@
 
 #### What Is A Robot? 什么是机器人？
 - A well-accepted opinion: 一个公认的观点：
-
-  – Mechanical structure to interact with the 
-  environment 与环境互动的机械结构
-  – Electronics to sense, actuate and process 
-  information 传感、驱动和处理信息的电子学
-  – Software to generate commands and 
-  autonomous motions to assist humans 软件生成指令和自主动作来帮助人类
+  – Mechanical structure to interact with the environment 与环境互动的机械结构
+  – Electronics to sense, actuate and process information 传感、驱动和处理信息的电子学
+  – Software to generate commands and autonomous motions to assist humans 软件生成指令和自主动作来帮助人类
 
 #### Classification 分类
 - Classification In terms of layout 按设计分类
@@ -191,6 +187,29 @@ A Robot Manipulator is consisted of 1. Body(Mechanical body), 2. Actuators, 3. S
   • The part connected to ground is called base 与地面相连的部分称为底座
   • The movable modules are called joints, the 1st joint, 2nd joint, … 活动模块被称为关节，第一关节，第二关节，…
   • The rigid connections are called links(the 1st link, 2nd link...). 刚性连接被称为链接（第一链接，第二链接…）。
+
+##### Joints 关节
+- Joints are used to connect links, being key components to generate robot motions 关节用于连接连杆，是产生机器人运动的关键部件
+- Joints are classified into revolute joints and prismatic joints 关节分为转动关节和移动关节
+  • Prismatic joints: relative linear motion 移动关节：相对线性运动
+  • Revolute joints: relative rotation 转动关节：相对转动
+
+##### End-effector 末端执行器
+- End-effector is the tool for a robot to carry out a task. 末端执行器是机器人执行任务的工具。
+  - gripper 钳子，drill 钻机，cutter 切割机，welding gun 焊枪，others 其他
+
+##### Degree of Freedom (DOF) 自由度
+- The degree of freedom (DOF) is a parameter describing degree of motion of a manipulator. 自由度（DOF）是描述机械臂运动程度的参数。
+  - It is equal to the number of joints (if there are only prismatic and revolute joints) of a robot manipulator. 它等于机械臂的关节数（如果只有移动关节和转动关节）。
+  - It is equal to the number of parameters specifying the configuration of a manipulator or mechanical system. 它等于指定机械手或机械系统结构的参数数量。
+- A mobile robot in a plane has 2 translational degrees and 1 rotational degree. 在平面上移动的机器人有2个平移度和1个旋转度。
+- A free-flying rigid body in a space has 3 translational and 3 rotational degrees.
+
+##### Actuation 驱动器
+
+
+##### Sensors 传感器
+
 
 
 ### 1.1.2 Mathematical Concepts and Spatial Transformation - 数学概念与空间转换 <a id="Mathematical-Concepts-and-Spatial-Transformation"></a>
