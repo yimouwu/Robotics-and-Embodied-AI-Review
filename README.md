@@ -136,12 +136,14 @@
 
 # 1. Research Areas Guide - 研究领域入门指南 <a id="research-areas-guide"></a>
 
+
 ## 1.1 Fundamentals of Robotics - 机器人学基础 <a id="Fundamentals-of-Robotics"></a>
 
 ### 1.1.1 Introduction - 基本概念入门 <a id="Markovian-Decision-Process"></a>
 
 #### What Is A Robot? 什么是机器人？
 - A well-accepted opinion: 一个公认的观点：
+
   – Mechanical structure to interact with the 
   environment 与环境互动的机械结构
   – Electronics to sense, actuate and process 
