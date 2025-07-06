@@ -213,7 +213,19 @@ A Robot Manipulator is consisted of 1. Body(Mechanical body), 2. Actuators, 3. S
 
 
 ### 1.1.2 Mathematical Concepts and Spatial Transformation - 数学概念与空间转换 <a id="Mathematical-Concepts-and-Spatial-Transformation"></a>
-(Coming Soon...)  
+
+##### Introduction
+The configuration of a robot manipulator is determined by joint angles (variables) and joint-to-joint relationship (constant)
+• Task specification is usually given in Cartesian space, i.e. the desired position and orientation of the end-effector are given in a Cartesian coordinates frame.
+• Problem: How do we use joint information to obtain the position and orientation of the end-effector?
+
+##### - Direction I: Forward Kinematics 正向运动学：机器人学中的一种方法，用于计算机器人末端执行器在给定关节角度下的位置和方向。
+• Definition: Given a set of joint variables , determine the position and orientation of the end-effector with respect to a task (world, inertia) coordinate frame. 给定一组关节变量，确定末端执行器相对于任务（世界，惯性）坐标系的位置和方向。
+![alt text](image/image1.png)
+
+##### - Direction II: Inverse Kinematics 逆向运动学：一种数学过程，从其他数据比如笛卡尔坐标系下的空间位姿中恢复物体的运动参数，常用于机器人技术。
+• Definition: Given a position and orientation of the end-effector, find the corresponding joint variables of the robot manipulator. 给定末端执行器的位置和姿态，求出机器人机械臂相应的关节变量。
+![alt text](image/image2.png)
 
 ### 1.1.3 Forward Kinematics - 正向运动学 <a id="Forward-Kinematics"></a>
 (Coming Soon...)  
@@ -247,10 +259,35 @@ A Robot Manipulator is consisted of 1. Body(Mechanical body), 2. Actuators, 3. S
 ## 1.3 Planning - 规划 <a id="Planning"></a>
 
 ### 1.3.1 Intro to Trajectory and Motion Planning - 轨迹与运动规划入门 <a id="Intro-to-Trajectory-and-Motion-Planning"></a>
-(Coming Soon...)  
+'The problem of calculating and generating the robot’s future motion sequence is called “planning”' 计算和生成机器人未来运动序列的问题被称为“规划”。
+- Trajectory and motion planning are essential components in the field of robotics and autonomous systems. They involve determining the sequence of movements a robot must execute to perform a task effectively and safely within its environment. 轨迹和运动规划是机器人和自主系统领域的重要组成部分。它们包括确定机器人必须执行的动作顺序，以便在其环境中有效安全地执行任务。
+![alt text](image/image3.png)
+
+- End-effector motion planning: To generate in- between configurations given its initial and final configurations (or poses) 末端执行器运动规划：给定其初始和最终构型（或姿态）生成中间构型
+
+- Planning results could directly affect the robot’s automation performance 规划结果会直接影响机器人的自动化性能
+
+- Constraints include safety(Obstacle avoidance, singularity avoidance), efficiency(Fast tasks in industry), economy(To generate lowest cost), etc. 约束包括安全性（避障，奇异点规避），效率（工业中的快速任务），经济性（产生最低成本）等。
+
+##### There are different types of planning problems: 不同类型的规划问题
+• Motion Planning 运动规划; • Path Planning 路径规划; • Trajectory Planning 轨迹规划
+![alt text](image/image4.png)
+- Relationship
+![alt text](image/image5.png)
+
+##### Components in planning 规划的组成部分
+• Boundary constraints 边界限制/约束; • Motion geometric profiles 运动几何轮廓; • Other constraints 其他约束
+
+##### Trajectory generation 轨迹生成
+
+
+
 
 ### 1.3.2 Search-Based Methods - 基于搜索的方法 <a id="Search-Based-Methods"></a>
-(Coming Soon...)  
+- Dijkstra’s method
+  - From the starting point, search every adjacent point in
+each new step until reaching the goal, then find the
+shortest path among all the goal-reachable solutions
 
 ### 1.3.3 Sampling-Based Methods - 基于采样的方法 <a id="Sampling-Based-Methods"></a>
 (Coming Soon...)  
