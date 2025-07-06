@@ -139,7 +139,57 @@
 ## 1.1 Fundamentals of Robotics - 机器人学基础 <a id="Fundamentals-of-Robotics"></a>
 
 ### 1.1.1 Introduction - 基本概念入门 <a id="Markovian-Decision-Process"></a>
-(Coming Soon...)  
+
+#### What Is A Robot? 什么是机器人？
+- A well-accepted opinion: 一个公认的观点：
+  – Mechanical structure to interact with the 
+  environment 与环境互动的机械结构
+  – Electronics to sense, actuate and process 
+  information 传感、驱动和处理信息的电子学
+  – Software to generate commands and 
+  autonomous motions to assist humans 软件生成指令和自主动作来帮助人类
+
+#### Classification 分类
+- Classification In terms of layout 按设计分类
+  - Manipulator: With extendable structures 机械手：具有可伸缩结构
+  • robot arm 机器人臂/机械臂
+  • multi-fingered robot hands 多指机器人手
+
+  - Mobile robot: With body mobility 移动机器人：具有身体移动能力
+  • wheeled mobile robots 轮式机器人
+  • humanoid robots 类人机器人
+  • autonomous aerial robots 自主空中机器人
+  • Unmanned Aerial Vehicle 无人机
+  • …
+
+  - Manipulator + mobile platform: 机械手移动平台：
+  • integration of above 以上的结合
+
+- Classification In terms of functionality 按功能分类
+  • Industrial robots 工业机器人
+  • Logistic robots 物流机器人
+  • Service robots 服务机器人
+  • Household robots 家庭机器人
+  • Medical robots 医疗机器人
+  • Professional service robots 专业服务机器人
+  • Aerial/Underwater/Space robots 空中/水下/空间 机器人
+  • …
+
+#### Components of Robotic Systems 机器人系统组成
+- Mechanical Structure: It is the body! Design, Kinematics and Dynamic models 机械结构：是身体！设计，运动学和动力学模型
+- Sensors: Measure robots’ own and environmental information. Position, Velocity, Force, Vision, etc 传感器：测量机器人自身和环境信息。位置，速度，力，视觉等
+- Computing System: It is the brain! Tasks include Sensor Fusion and Integration, Motion planning, Control, etc. 计算机系统：是大脑！任务包括传感器融合和集成，运动规划，控制等。
+- Actuators: It generates power! There are electrical, hydraulic, and pneumatic actuators, etc 驱动器：它产生能量！有电动、液压和气动执行器等
+- Human-robot interfaces: Enable human-robot interactions. 人机界面：实现人机交互。
+
+#### Robot Manipulator/Manipulation 机械臂
+A Robot Manipulator is consisted of 1. Body(Mechanical body), 2. Actuators, 3. Sensors, 4. Controllers, 5. End-effectors 机械臂由以下部分组成:1.本体（机械本体）, 2.致动器, 3.传感器, 4. 控制器, 5.末端执行器
+
+- A manipulator consists of a number connected rigid bodies. 机械臂由若干相连的刚体组成。
+  • The part connected to ground is called base 与地面相连的部分称为底座
+  • The movable modules are called joints, the 1st joint, 2nd joint, … 活动模块被称为关节，第一关节，第二关节，…
+  • The rigid connections are called links(the 1st link, 2nd link...). 刚性连接被称为链接（第一链接，第二链接…）。
+
 
 ### 1.1.2 Mathematical Concepts and Spatial Transformation - 数学概念与空间转换 <a id="Mathematical-Concepts-and-Spatial-Transformation"></a>
 (Coming Soon...)  
@@ -289,9 +339,13 @@
 # 3. Literature Review - 文献综述 <a id="literature-review"></a>
 
 ## 3.1 Traditional Control - 传统控制 <a id="Traditional-Control"></a>
-(Coming Soon...)  
+
+- A manipulator-assisted multiple UAV landing system for USV subject to disturbance 
+*R. Xu, C. Liu, Z. Cao, Y. Wang and H. Qian; Ocean Engineering 2024 Vol. 299 Pages 117306; DOI: 10.1016/j.oceaneng.2024.117306*
 
 ## 3.2 Model Predictive Control - 模型预测控制 <a id="Model-Predictive-Control"></a>
+
+
 - Confidence-Aware Object Capture for a Manipulator Subject to Floating-Base Disturbances 
 *R. Xu, Z. Jiang, B. Liu, Y. Wang and H. Qian; IEEE Transactions on Robotics 2024 Vol. 40 Pages 4396-4413; DOI: 10.1109/tro.2024.3463476*
 
@@ -327,6 +381,10 @@
 
   **关键词**
   - 置信度分析，浮动基座机械臂，运动规划，目标捕获，波レット网络，贝叶斯方法，实时控制，无人艇，自动化系统
+
+<!-- ##
+- Confidence-Aware Object Capture for a Manipulator Subject to Floating-Base Disturbances 
+*R. Xu, Z. Jiang, B. Liu, Y. Wang and H. Qian; IEEE Transactions on Robotics 2024 Vol. 40 Pages 4396-4413; DOI: 10.1109/tro.2024.3463476* -->
 
 
 ## 3.3 Vision Language Model - 视觉-语言模型 <a id="Vision-Language-Model"></a>
