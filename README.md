@@ -432,18 +432,18 @@ The UKF generates a set of sigma points that are propagated through the nonlinea
 
 ##### 1.4.1.2.3.1. Overview
 
-The ESKF estimates the error between the estimated state and the true state, rather than estimating the state directly. This is particularly useful for systems where the state variables exhibit slow changes or when initial estimates are available.
+The ESKF estimates the error between the estimated state and the true state, rather than estimating the state directly. This is particularly useful for systems where the state variables exhibit slow changes or when initial estimates are available. ESKF估计 估计状态 和 真实状态 之间的误差，而不是直接估计状态。这对于状态变量表现出缓慢变化或初始估计可用的系统特别有用。
 
 ##### 1.4.1.2.3.2. Advantages
 
-- **Numerical Stability:** By focusing on small errors, numerical issues due to large state values are minimized.
-- **Simplified Linearization:** The error dynamics are often more linear than the state dynamics, simplifying the computation.
+- **Numerical Stability:** By focusing on small errors, numerical issues due to large state values are minimized. **数值稳定性：** 通过关注小误差，由于大状态值的数值问题被最小化。
+- **Simplified Linearization:** The error dynamics are often more linear than the state dynamics, simplifying the computation. **简化线性化：** 误差动力学通常比状态动力学更线性，简化了计算。
 
 ##### 1.4.1.2.3.3. Applications
 
-- **Inertial Navigation Systems (INS):** Where small errors in position, velocity, and orientation need to be accurately estimated.
-- **Robotics:** Precise localization and mapping, especially in SLAM applications.
-- **Aerospace:** Attitude estimation for aircraft and satellites.
+- **Inertial Navigation Systems (INS):** Where small errors in position, velocity, and orientation need to be accurately estimated. **惯性导航系统（INS）：** 需要精确估计位置、速度和方向的小误差。
+- **Robotics:** Precise localization and mapping, especially in SLAM applications. **机器人：** 精确定位和绘图，特别是在SLAM应用中。
+- **Aerospace:** Attitude estimation for aircraft and satellites. **航空航天：** 飞机和卫星的姿态估计。
 
 #### 1.4.1.2.4. Square Root Kalman Filter (SRKF)
 
