@@ -54,18 +54,19 @@
       </ul>
       <li><a href="#Perception">1.4 Perception - 感知</a></li>
       <ul>
-        <li><a href="#Scene-Understanding">1.4.1 Computer Vision - 计算机视觉</a></li>
+        <li><a href="#Kalman-Filter">1.4.1 Kalman Filter - 卡尔曼滤波器</a></li>
+        <li><a href="#Scene-Understanding">1.4.2 Computer Vision - 计算机视觉</a></li>
         <ul>
-          <li><a href="#2D-Vision">1.4.1.1 2D Vision - 二维视觉</a></li>
-          <li><a href="#3D-Vision">1.4.1.2 3D Vision - 三维视觉</a></li>
-          <li><a href="#3D-Vision">1.4.1.3 4D Vision - 四维视觉</a></li>
-          <li><a href="#Subdivision-of-application-domains">1.4.1.4 Subdivision of application domains - 应用领域细分</a></li>
+          <li><a href="#2D-Vision">1.4.2.1 2D Vision - 二维视觉</a></li>
+          <li><a href="#3D-Vision">1.4.2.2 3D Vision - 三维视觉</a></li>
+          <li><a href="#3D-Vision">1.4.2.3 4D Vision - 四维视觉</a></li>
+          <li><a href="#Subdivision-of-application-domains">1.4.2.4 Subdivision of application domains - 应用领域细分</a></li>
           <ul>
-            <li><a href="#Visual-Prompting">1.4.1.4.1 Visual Prompting - 视觉提示</a></li>
-            <li><a href="#Affordance-Grounding">1.4.1.4.2 Affordance Grounding - 可供性锚定</a></li>
+            <li><a href="#Visual-Prompting">1.4.2.4.1 Visual Prompting - 视觉提示</a></li>
+            <li><a href="#Affordance-Grounding">1.4.2.4.2 Affordance Grounding - 可供性锚定</a></li>
             <ul>
-              <li><a href="#Two-Dimension">1.4.1.4.2.1 2D - 二维</a></li>
-              <li><a href="#Three-Dimension">1.4.1.4.2.2 3D - 三维</a></li>
+              <li><a href="#Two-Dimension">1.4.2.4.2.1 2D - 二维</a></li>
+              <li><a href="#Three-Dimension">1.4.2.4.2.2 3D - 三维</a></li>
             </ul>
           </ul>
         </ul>
@@ -283,17 +284,24 @@ The configuration of a robot manipulator is determined by joint angles (variable
 
 
 
+
+
 ### 1.3.2 Search-Based Methods - 基于搜索的方法 <a id="Search-Based-Methods"></a>
 - Dijkstra’s method
-  - From the starting point, search every adjacent point in
-each new step until reaching the goal, then find the
-shortest path among all the goal-reachable solutions
+  - From the starting point, search every adjacent point in each new step until reaching the goal, then find the shortest path among all the goal-reachable solutions
+
+
+
 
 ### 1.3.3 Sampling-Based Methods - 基于采样的方法 <a id="Sampling-Based-Methods"></a>
 (Coming Soon...)  
 
+
+
 ### 1.3.4 Geometry-Based Methods - 基于几何学的方法 <a id="Geometry-Based-Methods"></a>
 (Coming Soon...)  
+
+
 
 ### 1.3.5 Optimization-Based Methods - 基于最优化的方法 <a id="Optimization-Based-Methods"></a>
 (Coming Soon...)  
@@ -306,30 +314,340 @@ shortest path among all the goal-reachable solutions
 
 
 
+
 ## 1.4 Perception - 感知 <a id="Perception"></a>
 
-### 1.4.1 Computer Vision - 计算机视觉 <a id="Scene-Understanding"></a>
+### 1.4.1 Kalman Filter - 卡尔曼滤波器 <a id="Kalman-Filter"></a>
 
-#### 1.4.1.1 2D Vision - 二维视觉 <a id="2D-Vision"></a>
+### Introduction
+
+The **Kalman Filter** is a mathematical algorithm that provides an efficient computational solution to estimate the state of a dynamic system from a series of incomplete and noisy measurements. It is widely used in control systems, navigation, signal processing, and econometrics due to its ability to extract useful information from noisy data. 卡尔曼滤波是一种数学算法，它提供了一种有效的计算解决方案，从一系列不完整和有噪声的测量中估计动态系统的状态。由于它能够从噪声数据中提取有用的信息，因此被广泛应用于控制系统、导航、信号处理和计量经济学中。
+
+
+### 1.4.1.1. What is the Kalman Filter?
+
+#### 1.4.1.1.1. Overview
+
+The Kalman Filter is a recursive estimator that estimates the state of a discrete-time controlled process governed by a linear stochastic difference equation. It operates in a two-step process: 卡尔曼滤波器是一种递归估计器，用于估计由线性随机差分方程控制的离散时间控制过程的状态。它分为两步：
+
+1. **Prediction Step:** The filter produces estimates of the current state variables, along with their uncertainties.   **预测步骤：** 过滤器产生当前状态变量的估计，以及它们的不确定性。
+2. **Update Step (Correction):** Once a new measurement is observed, these predictions are updated using a weighted average, with more weight given to estimates with higher certainty.   **更新步骤（修正）：** 一旦观察到新的测量结果，这些预测将使用加权平均值进行更新，并将更多的权重赋予具有更高确定性的估计。
+
+#### 1.4.1.1.2. Mathematical Foundations
+
+The Kalman Filter assumes the following: 卡尔曼滤波器假设如下
+
+- The system is **linear**. 该系统是线性的。
+- The system dynamics and measurement equations are known. 系统动力学和测量方程是已知的。
+- The process noise and measurement noise are both **Gaussian**, with zero mean and known covariance. 过程噪声和测量噪声均为**高斯噪声**，均值为零，协方差已知。
+
+**State-Space Representation 状态空间表示:** 
+
+The system can be represented in state-space form:
+
+1. **State Equation (Process Model):**
+   \[
+   \mathbf{x}_{k} = \mathbf{A}_{k}\mathbf{x}_{k-1} + \mathbf{B}_{k}\mathbf{u}_{k} + \mathbf{w}_{k}
+   \]
+
+2. **Measurement Equation:**
+   \[
+   \mathbf{z}_{k} = \mathbf{H}_{k}\mathbf{x}_{k} + \mathbf{v}_{k}
+   \]
+
+**Where:**
+
+- \(\mathbf{x}_{k}\): State vector at time \(k\).
+- \(\mathbf{A}_{k}\): State transition matrix.
+- \(\mathbf{B}_{k}\): Control input matrix.
+- \(\mathbf{u}_{k}\): Control input vector.
+- \(\mathbf{w}_{k}\): Process noise (assumed to be Gaussian with covariance \(\mathbf{Q}_{k}\)).
+- \(\mathbf{z}_{k}\): Measurement vector at time \(k\).
+- \(\mathbf{H}_{k}\): Measurement matrix.
+- \(\mathbf{v}_{k}\): Measurement noise (assumed to be Gaussian with covariance \(\mathbf{R}_{k}\)).
+
+
+### 1.4.1.2. Variants of the Kalman Filter
+
+Due to limitations in the basic Kalman Filter (e.g., linearity assumptions), several variants have been developed to handle nonlinear systems, improve numerical stability, and address specific application requirements.
+
+#### 1.4.1.2.1. Extended Kalman Filter (EKF)
+
+##### 1.4.1.2.1.1. Overview
+
+The EKF linearizes the nonlinear system around the current estimate using Taylor series expansion. It approximates the system dynamics and measurement equations to first-order terms.
+
+##### 1.4.1.2.1.2. Mathematical Formulation
+
+For a system described by nonlinear functions:
+
+- **Process Model:**
+  \[
+  \mathbf{x}_{k} = f(\mathbf{x}_{k-1}, \mathbf{u}_{k}) + \mathbf{w}_{k}
+  \]
+
+- **Measurement Model:**
+  \[
+  \mathbf{z}_{k} = h(\mathbf{x}_{k}) + \mathbf{v}_{k}
+  \]
+
+The EKF uses Jacobian matrices to linearize \(f\) and \(h\):
+
+- **State Transition Jacobian:**
+  \[
+  \mathbf{F}_{k} = \left. \frac{\partial f}{\partial \mathbf{x}} \right|_{\hat{\mathbf{x}}_{k-1}}
+  \]
+
+- **Measurement Jacobian:**
+  \[
+  \mathbf{H}_{k} = \left. \frac{\partial h}{\partial \mathbf{x}} \right|_{\hat{\mathbf{x}}_{k}}
+  \]
+
+##### 1.4.1.2.1.3. Applications
+
+- **Navigation Systems:** Aerospace and marine navigation where the motion dynamics are nonlinear.
+- **Robotics:** Mobile robot localization and mapping (SLAM).
+- **Tracking Systems:** Radar and sonar tracking of maneuvering targets.
+
+#### 1.4.1.2.2. Unscented Kalman Filter (UKF)
+
+##### 1.4.1.2.2.1. Overview
+
+The UKF addresses the inaccuracies arising from linearization in the EKF by using deterministic sampling (sigma points) to capture the mean and covariance estimates more accurately.
+
+##### 1.4.1.2.2.2. Sigma Points
+
+The UKF generates a set of sigma points that are propagated through the nonlinear functions:
+
+- Captures up to the second-order statistics of the Gaussian distribution.
+- Provides better approximations for nonlinear transformations.
+
+##### 1.4.1.2.2.3. Applications
+
+- **Nonlinear Control Systems:** Where higher accuracy is needed over the EKF.
+- **sensor fusion:** Combining data from multiple sensors with nonlinear measurements.
+- **Autonomous Vehicles:** State estimation in complex dynamic environments.
+
+#### 1.4.1.2.3. Error-State Kalman Filter (ESKF)
+
+##### 1.4.1.2.3.1. Overview
+
+The ESKF estimates the error between the estimated state and the true state, rather than estimating the state directly. This is particularly useful for systems where the state variables exhibit slow changes or when initial estimates are available.
+
+##### 1.4.1.2.3.2. Advantages
+
+- **Numerical Stability:** By focusing on small errors, numerical issues due to large state values are minimized.
+- **Simplified Linearization:** The error dynamics are often more linear than the state dynamics, simplifying the computation.
+
+##### 1.4.1.2.3.3. Applications
+
+- **Inertial Navigation Systems (INS):** Where small errors in position, velocity, and orientation need to be accurately estimated.
+- **Robotics:** Precise localization and mapping, especially in SLAM applications.
+- **Aerospace:** Attitude estimation for aircraft and satellites.
+
+#### 1.4.1.2.4. Square Root Kalman Filter (SRKF)
+
+##### 1.4.1.2.4.1. Overview
+
+The SRKF maintains the square root of the covariance matrix to improve numerical stability.
+
+##### 1.4.1.2.4.2. Advantages
+
+- **Numerical Stability:** Avoids direct computation of the covariance matrix, reducing round-off errors.
+- **Positive Definiteness:** Ensures the covariance matrix remains positive definite.
+
+##### 1.4.1.2.4.3. Applications
+
+- **High-Precision Systems:** Where numerical errors can accumulate over time.
+- **Large-Scale Systems:** With significant computational demands.
+
+#### 1.4.1.2.5. Information Filter (Inverse Covariance Filter)
+
+##### 1.4.1.2.5.1. Overview
+
+The Information Filter operates on the information matrix (inverse of the covariance matrix) and information vector.
+
+##### 1.4.1.2.5.2. Advantages
+
+- **Sparsity Exploitation:** Efficient for systems where the information matrix is sparse.
+- **Distributed Estimation:** Facilitates decentralized estimation in networked systems.
+
+##### 1.4.1.2.5.3. Applications
+
+- **Sensor Networks:** Distributed state estimation.
+- **Multi-Robot Systems:** Where robots share information to estimate a common state.
+
+#### 1.4.1.2.6. Ensemble Kalman Filter (EnKF)
+
+##### 1.4.1.2.6.1. Overview
+
+The EnKF uses a Monte Carlo approach with an ensemble of random samples to estimate the state distribution.
+
+##### 1.4.1.2.6.2. Applications
+
+- **Meteorology:** Weather prediction and climate modeling.
+- **Oceanography:** Estimating ocean states from sparse measurements.
+
+#### 1.4.1.2.7. Particle Filter (Sequential Monte Carlo Methods)
+
+Although not a Kalman filter, particle filters are similar recursive Bayesian estimators suitable for highly nonlinear and non-Gaussian systems.
+
+
+
+### 1.4.1.3. Applications of Different Kalman Filter Variants
+
+#### 1.4.1.3.1. Linear Kalman Filter
+
+- **Finance:** Estimating market trends and filtering economic indicators.
+- **Signal Processing:** Noise reduction in signals, system identification.
+- **Control Systems:** Classical control applications with linear dynamics.
+
+#### 1.4.1.3.2. Extended Kalman Filter (EKF)
+
+- **GPS Navigation:** Position and velocity estimation.
+- **Robotics:** Odometry and sensor fusion for mobile robots.
+- **Biomedical Engineering:** Heart rate estimation from noisy measurements.
+
+#### 1.4.1.3.3. Unscented Kalman Filter (UKF)
+
+- **Aerospace Engineering:** Attitude and orbit determination for spacecraft.
+- **Automotive Applications:** Vehicle tracking and advanced driver-assistance systems (ADAS).
+- **Nonlinear System Identification:** Estimating parameters in complex models.
+
+#### 1.4.1.3.4. Error-State Kalman Filter (ESKF)
+
+- **Inertial Measurement Unit (IMU) Integration:** Correcting drift errors in accelerometers and gyroscopes.
+- **Mobile Robotics:** High-precision localization in GPS-denied environments.
+- **Virtual Reality (VR):** Head and motion tracking for immersive experiences.
+
+#### 1.4.1.3.5. Square Root Kalman Filter (SRKF)
+
+- **High-Precision Navigation:** Submarine and missile guidance systems.
+- **Space Missions:** Deep space navigation where precision is critical.
+
+#### 1.4.1.3.6. Information Filter
+
+- **Decentralized Estimation:** Collaborative tracking in sensor networks.
+- **Multisensor Data Fusion:** Integrating measurements from distributed sensors.
+
+#### 1.4.1.3.7. Ensemble Kalman Filter (EnKF)
+
+- **Geosciences:** Assimilating data from various sources for environmental modeling.
+- **Hydrology:** Estimating water flow and levels in river basins.
+
+
+### 1.4.1.4. Choosing the Appropriate Kalman Filter Variant
+
+#### 1.4.1.4.1. System Linearity
+
+- **Linear Systems:** Use the standard Kalman Filter.
+- **Mildly Nonlinear Systems:** EKF may suffice, but be cautious of linearization errors.
+- **Highly Nonlinear Systems:** UKF or particle filters are more appropriate.
+
+#### 1.4.1.4.2. Computational Resources
+
+- **Limited Resources:** EKF is less computationally intensive than UKF.
+- **High Accuracy Needed:** UKF provides better estimates at the expense of computation.
+
+#### 1.4.1.4.3. Noise Characteristics
+
+- **Gaussian Noise:** Standard KF, EKF, UKF assume Gaussian noise.
+- **Non-Gaussian Noise:** Particle filters or other nonlinear estimators are preferable.
+
+#### 1.4.1.4.4. Application Requirements
+
+- **Precision vs. Speed:** SRKF is preferred for precision, while standard KF is faster.
+- **Distributed Systems:** Information Filters are suitable for decentralized estimation.
+
+
+
+### 1.4.1.5. Kalman Filter Algorithm Steps
+
+#### 1.4.1.5.1. Standard Kalman Filter Steps
+
+1. **Initialization:**
+   - Set initial state estimate \(\hat{\mathbf{x}}_{0}\) and covariance \(\mathbf{P}_{0}\).
+
+2. **Prediction Step:**
+   - Predict the next state:
+     \[
+     \hat{\mathbf{x}}_{k|k-1} = \mathbf{A}_{k}\hat{\mathbf{x}}_{k-1|k-1} + \mathbf{B}_{k}\mathbf{u}_{k}
+     \]
+   - Predict the covariance:
+     \[
+     \mathbf{P}_{k|k-1} = \mathbf{A}_{k}\mathbf{P}_{k-1|k-1}\mathbf{A}_{k}^{T} + \mathbf{Q}_{k}
+     \]
+
+3. **Update Step:**
+   - Compute the Kalman Gain:
+     \[
+     \mathbf{K}_{k} = \mathbf{P}_{k|k-1}\mathbf{H}_{k}^{T}(\mathbf{H}_{k}\mathbf{P}_{k|k-1}\mathbf{H}_{k}^{T} + \mathbf{R}_{k})^{-1}
+     \]
+   - Update the estimate with measurement \(\mathbf{z}_{k}\):
+     \[
+     \hat{\mathbf{x}}_{k|k} = \hat{\mathbf{x}}_{k|k-1} + \mathbf{K}_{k}(\mathbf{z}_{k} - \mathbf{H}_{k}\hat{\mathbf{x}}_{k|k-1})
+     \]
+   - Update the covariance:
+     \[
+     \mathbf{P}_{k|k} = (\mathbf{I} - \mathbf{K}_{k}\mathbf{H}_{k})\mathbf{P}_{k|k-1}
+     \]
+
+#### 1.4.1.5.2. EKF and UKF Adaptations
+
+- **EKF:** Incorporate Jacobians in prediction and update steps.
+- **UKF:** Use sigma points to approximate the distributions.
+
+
+
+### 1.4.1.6. Practical Considerations
+
+#### 1.4.1.6.1. Tuning the Filter
+
+- **Process Noise Covariance (\(\mathbf{Q}\)):** Adjust to reflect how much uncertainty is in the model.
+- **Measurement Noise Covariance (\(\mathbf{R}\)):** Set based on the accuracy of the sensors.
+
+#### 1.4.1.6.2. Initialization
+
+- **State Estimate:** Should be as close as possible to the true initial state.
+- **Covariance Matrix:** Reflect the confidence in the initial estimate.
+
+#### 1.4.1.6.3. Numerical Stability
+
+- **Covariance Matrix Symmetry:** Ensure that \(\mathbf{P}\) remains symmetric and positive semi-definite.
+- **Avoiding Divergence:** Monitor innovations (measurement residuals) to detect divergence.
+
+
+
+As the conclusion, the Kalman Filter and its variants are powerful tools for state estimation in various systems, especially when dealing with uncertainties and noise. By selecting the appropriate variant based on the system's characteristics and application requirements, one can achieve robust and accurate estimation results.
+
+Understanding the mathematical foundations, assumptions, and limitations of each filter variant is crucial for successful implementation. Continuous advancements in filter design and computation methods are expanding their applicability to increasingly complex and nonlinear systems.
+
+
+
+
+
+### 1.4.2 Computer Vision - 计算机视觉 <a id="Scene-Understanding"></a>
+
+#### 1.4.2.1 2D Vision - 二维视觉 <a id="2D-Vision"></a>
 (Coming Soon...)  
 
-#### 1.4.1.2 3D Vision - 三维视觉 <a id="3D-Vision"></a>
+#### 1.4.2.2 3D Vision - 三维视觉 <a id="3D-Vision"></a>
 (Coming Soon...)  
 
-#### 1.4.1.3 4D Vision - 四维视觉 <a id="4D-Vision"></a>
+#### 1.4.2.3 4D Vision - 四维视觉 <a id="4D-Vision"></a>
 (Coming Soon...)  
 
-#### 1.4.1.4 Subdivision of Application Domains - 应用领域细分 <a id="Subdivision-of-application-domains"></a>
+#### 1.4.2.4 Subdivision of Application Domains - 应用领域细分 <a id="Subdivision-of-application-domains"></a>
 
-##### 1.4.1.4.1 Visual Prompting - 视觉提示 <a id="Visual-Prompting"></a>
+##### 1.4.2.4.1 Visual Prompting - 视觉提示 <a id="Visual-Prompting"></a>
 (Coming Soon...)  
 
-##### 1.4.1.4.2 Affordance Grounding - 可供性锚定 <a id="Affordance-Grounding"></a>
+##### 1.4.2.4.2 Affordance Grounding - 可供性锚定 <a id="Affordance-Grounding"></a>
 
-###### 1.4.1.4.2.1 2D - 二维 <a id="Two-Dimension"></a>
+###### 1.4.2.4.2.1 2D - 二维 <a id="Two-Dimension"></a>
 (Coming Soon...)  
 
-###### 1.4.1.4.2.2 3D - 三维 <a id="Three-Dimension"></a>
+###### 1.4.2.4.2.2 3D - 三维 <a id="Three-Dimension"></a>
 (Coming Soon...)  
 
 
