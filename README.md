@@ -229,31 +229,31 @@ The configuration of a robot manipulator is determined by joint angles (variable
 ![alt text](image/image2.png)
 
 ### 1.1.3 Forward Kinematics - 正向运动学 <a id="Forward-Kinematics"></a>
-(Coming Soon...)  
+
 
 ### 1.1.4 Inverse Kinematics - 逆向运动学 <a id="Inverse-Kinematics"></a>
-(Coming Soon...)  
+
 
 ### 1.1.5 Velocity Kinematics - 速度运动学 <a id="Velocity-Kinematics"></a>
-(Coming Soon...)  
+
 
 
 
 ## 1.2 Control - 控制 <a id="Control"></a>
 
 ### 1.2.1 Concepts - 概念与术语 <a id="Control-Concepts"></a>
-(Coming Soon...)  
+
 
 ### 1.2.2 Control System - 控制系统 <a id="Control-System"></a>
-(Coming Soon...)  
+
 
 ### 1.2.3 Controller - 控制器 <a id="Controller"></a>
 
 #### 1.2.3.1 LQR Controller - LQR 控制器 <a id="LQR"></a>
-(Coming Soon...)  
+
 
 #### 1.2.3.2 P.I.D. Controller - P.I.D. 控制器 <a id="PID"></a>
-(Coming Soon...)  
+
 
 
 
@@ -287,24 +287,42 @@ The configuration of a robot manipulator is determined by joint angles (variable
 
 
 ### 1.3.2 Search-Based Methods - 基于搜索的方法 <a id="Search-Based-Methods"></a>
-- Dijkstra’s method
-  - From the starting point, search every adjacent point in each new step until reaching the goal, then find the shortest path among all the goal-reachable solutions
+- Dijkstra’s method 迪杰斯特拉算法
+  - From the starting point, search every adjacent point in each new step until reaching the goal, then find the shortest path among all the goal-reachable solutions. 从起始点开始，在每一步中搜索每个相邻点，直至到达目标点，然后从所有能够到达目标点的方案中找出最短路径。
+  ![alt text](image/image6.png)
 
-
-
+- A* method A星算法
+  - From the starting point, find the adjacent point and select the point with the lowest cost as a new starting point until reaching the goal. 从起点开始，寻找相邻的点，选择代价最低的点作为新的起点，直到到达目标。
+  - It is a more efficient version of Dijkstra’s method. 它是迪杰斯特拉算法的一个更有效的版本。
+  ![alt text](image/image7.png)
+  ![alt text](image/image8.png)
+##### Comparison 比较
+  ![alt text](image/image9.png)
 
 ### 1.3.3 Sampling-Based Methods - 基于采样的方法 <a id="Sampling-Based-Methods"></a>
-(Coming Soon...)  
+![alt text](image/image10.png)
 
+![alt text](image/image11.png)
 
+![alt text](image/image12.png)
+
+### Summary so far
+- Search-based methods need to discretize the space first, and are generally used in low-dimensional space and could be inefficient in e.g. 6-DoF space 基于搜索的方法需要首先将空间离散化，通常用于低维空间，在6自由度空间中可能效率低下
+  - Typical applications: Character moving in video games, decision making in AI, etc. 典型应用：电子游戏中的角色移动，AI中的决策制定等。
+- Sampling-based methods do not need to discretize the space, and is workable in high-dimensional space 基于采样的方法不需要对空间进行离散化，在高维空间中是可行的
+  - Typical applications: Manipulator grasping, pick-and-place, etc. 典型应用：机械手抓取、取放等。
+- However, the above methods requires to know all the possible constraints appear in the whole space (e.g. obstacle positions and shapes, space limits) 然而，上述方法需要知道整个空间中出现的所有可能的约束（例如障碍物的位置和形状，空间限制）。
+- Unable to reliably deal with dynamic constraints 无法可靠地处理动态约束
 
 ### 1.3.4 Geometry-Based Methods - 基于几何学的方法 <a id="Geometry-Based-Methods"></a>
-(Coming Soon...)  
-
-
+![alt text](image/image13.png)
+![alt text](image/image14.png)
 
 ### 1.3.5 Optimization-Based Methods - 基于最优化的方法 <a id="Optimization-Based-Methods"></a>
-(Coming Soon...)  
+- Generate an initial motion profile for the robot, followed by online refinement of it using global/local optimization
+- Example: CHOMP (Covariant Hamiltonian Optimization for Motion Planning)
+![alt text](image/image15.png)
+![alt text](image/image16.png)
 
 #### 1.3.5.1 Model Predictive Control - 模型预测控制 <a id="Model-Predictive-Control"></a>
 (Coming Soon...)  
@@ -375,11 +393,11 @@ Due to limitations in the basic Kalman Filter (e.g., linearity assumptions), sev
 
 ##### 1.4.1.2.1.1. Overview
 
-The EKF linearizes the nonlinear system around the current estimate using Taylor series expansion. It approximates the system dynamics and measurement equations to first-order terms.
+The EKF linearizes the nonlinear system around the current estimate using Taylor series expansion. It approximates the system dynamics and measurement equations to first-order terms. EKF利用泰勒级数展开对当前估计周围的非线性系统进行线性化。它将系统动力学和测量方程近似为一阶项。
 
 ##### 1.4.1.2.1.2. Mathematical Formulation
 
-For a system described by nonlinear functions:
+For a system described by nonlinear functions: 对于由非线性函数描述的系统：
 
 - **Process Model:**
   \[
