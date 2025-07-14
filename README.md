@@ -125,7 +125,7 @@
 
 # 0. Useful Info - 优质资源链接 <a id="links"></a>
 
-###### - [具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink) - 具身智能知识库
+###### - [Xbot具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink) - Xbot具身智能知识库
 ###### - [Embodied-AI-Guide](https://github.com/tianxingchen/Embodied-AI-Guide) - 具身智能系统性学习指南
 ###### - [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI) - 具身经典开源项目
 ###### - [具身智能招贤榜](https://github.com/StarCycle/Awesome-Embodied-AI-Job) - 业界学界招聘信息
@@ -325,12 +325,53 @@ The configuration of a robot manipulator is determined by joint angles (variable
 ![alt text](image/image16.png)
 
 #### 1.3.5.1 Model Predictive Control - 模型预测控制 <a id="Model-Predictive-Control"></a>
-(Coming Soon...)  
+- Using system model to online adjust its future behavior within a limited (future) time horizon using optimization. 利用系统模型在有限的（未来）时间范围内对其未来行为进行在线优化。
+
+![alt text](image/image17.png)
+
+![alt text](image/image18.png)
+
+![alt text](image/image19.png)
+
+![alt text](image/image20.png)
+
+- MPC is one of the most popular methods for integrated motion planning (by enforcing t→∞). MPC是最流行的综合运动规划方法之一（通过强制t→∞）。
+- Advantages 优势
+  - Could plan future motions under various and dynamic constraints 能在各种的和动态的约束下规划未来的运动
+  - Could be efficient within short time horizon 能在短时间视野内高效
+- Applications 应用
+  - Iron boiler temperature control 铁锅炉温度控制
+  - L2 Autonomous driving L2自动驾驶
+  - Drone formation flying 无人机编队飞行
+- Robot Tasks 机器人的任务
+  - Human-robot safe collaboration (robot manipulators) 人机安全协作（机械手）
+  - Dynamic planning in human crowd (mobile robots) 人群动态规划（移动机器人）
 
 ##### 1.3.5.1.1 Markovian Decision Process - 马尔可夫决策过程 <a id="Markovian-Decision-Process"></a>
-(Coming Soon...)  
 
 
+### Summary
+- Search-based methods 基于搜索的方法
+  - pros：
+    - Easy to implement 容易执行
+  - cons：
+    - Only efficient in low-dimensional space 只在低维空间有效
+- Sampling-based methods 基于采样的方法
+  - pros：
+    - Could scalability in arbitrary space 任意空间的可伸缩性
+    - Completeness of path finding (given enough time) 路径查找的完整性（给定足够的时间）
+  - cons：
+    - Planning time cost is too random to predict 规划的时间成本/所花费的时间是随机的，无法预测
+- Geometry-based methods 基于几何学的方法
+  - pros：
+    - Model is simple and very efficient 模型简单，效率高
+  - cons：
+    - Chances to be trapped in local minima 有可能被困在局部极小值
+- Optimization-based methods 基于最优化的方法
+  - pros：
+    - Could be reactive to complex and dynamic situations 能够对复杂和动态的情况做出反应
+  - cons：
+    - Performance depends on model initialization 性能取决于模型初始化
 
 
 ## 1.4 Perception - 感知 <a id="Perception"></a>
@@ -345,6 +386,7 @@ The **Kalman Filter** is a mathematical algorithm that provides an efficient com
 ### 1.4.1.1. What is the Kalman Filter?
 
 #### 1.4.1.1.1. Overview
+
 
 The Kalman Filter is a recursive estimator that estimates the state of a discrete-time controlled process governed by a linear stochastic difference equation. It operates in a two-step process: 卡尔曼滤波器是一种递归估计器，用于估计由线性随机差分方程控制的离散时间控制过程的状态。它分为两步：
 
@@ -647,66 +689,66 @@ Understanding the mathematical foundations, assumptions, and limitations of each
 ### 1.4.2 Computer Vision - 计算机视觉 <a id="Scene-Understanding"></a>
 
 #### 1.4.2.1 2D Vision - 二维视觉 <a id="2D-Vision"></a>
-(Coming Soon...)  
+
 
 #### 1.4.2.2 3D Vision - 三维视觉 <a id="3D-Vision"></a>
-(Coming Soon...)  
+
 
 #### 1.4.2.3 4D Vision - 四维视觉 <a id="4D-Vision"></a>
-(Coming Soon...)  
+ 
 
 #### 1.4.2.4 Subdivision of Application Domains - 应用领域细分 <a id="Subdivision-of-application-domains"></a>
 
 ##### 1.4.2.4.1 Visual Prompting - 视觉提示 <a id="Visual-Prompting"></a>
-(Coming Soon...)  
+
 
 ##### 1.4.2.4.2 Affordance Grounding - 可供性锚定 <a id="Affordance-Grounding"></a>
 
 ###### 1.4.2.4.2.1 2D - 二维 <a id="Two-Dimension"></a>
-(Coming Soon...)  
+
 
 ###### 1.4.2.4.2.2 3D - 三维 <a id="Three-Dimension"></a>
-(Coming Soon...)  
+
 
 
 
 ### 1.4.2 Scene Understanding - 场景理解 <a id="Scene-Understanding"></a>
 
 #### 1.4.2.1 Segmentation - 图像分割 <a id="Segmentation"></a>
-(Coming Soon...)  
+
 
 
 
 ## 1.5 Learning - 学习 <a id="Learning"></a>
 
 ### 1.5.1 Intro to Machine Learning - 机器学习入门 <a id="Intro-to-Machine-Learning"></a>
-(Coming Soon...)  
+ 
 
 ### 1.5.2 Reinforcement Learning - 强化学习 <a id="Reinforcement-Learning"></a>
-(Coming Soon...)  
+
 
 ### 1.5.3 Imitation Learning - 模仿学习 <a id="Imitation-Learning"></a>
-(Coming Soon...)  
+
 
 
 
 ## 1.6 Multi-Robot Systems - 多机器人系统 <a id="Multi-Robot-Systems"></a>
-(Coming Soon...)  
+
 
 
 
 ## 1.7 Simulation and Modeling - 仿真与建模 <a id="Simulation-and-Modeling"></a>
-(Coming Soon...)  
+
 
 
 
 ## 1.8 Physical Interaction - 物理交互 <a id="Physical-Interaction"></a>
-(Coming Soon...)  
+
 
 
 
 ## 1.9 Ethics and Social Implications - 伦理与社会问题 <a id="Ethics-and-Social-Implications"></a>
-(Coming Soon...)  
+
 
 
 
@@ -715,18 +757,155 @@ Understanding the mathematical foundations, assumptions, and limitations of each
 ## 2.1 Software - 软件 <a id="software"></a>
 
 ### 2.1.1 General Tools - 常用工具 <a id="General-Tools"></a>
-(Coming Soon...)  
+
 
 ### 2.1.2 Simulators - 仿真器 <a id="simulators"></a>
-(Coming Soon...)  
+
 
 ### 2.1.3 Robot Description - 机器人描述格式 <a id="Robot-Description"></a>
-(Coming Soon...)  
+
+**"URDF, Xacro, or MJCF formats"** are file formats used to describe the object models in robots or simulation environments, and are usually referred to as **robot model files** or **robot description formats**. They are mainly used for robot simulation, control and rendering, and are common model description methods in robotics and simulators. The following is a detailed explanation:
+**“URDF, Xacro, or MJCF formats”** 是用于描述机器人或仿真环境中的物体模型的文件格式，通常被称为**机器人模型文件**或**机器人描述格式**。它们主要用于机器人仿真、控制和渲染，是机器人学和仿真器中常见的模型描述方式。以下是详细解释：
+
+#### **2.1.3.1. Introduction 介绍**
+
+##### **2.1.3.1.1 URDF (Unified Robot Description Format)**
+  - **Terminology 全称**：Unify the description format of robots. 统一机器人描述格式。
+  - **Function 作用**：URDF is an XML-based file format used to describe the physical structure, kinematics, dynamics, geometry and joint configuration of robots. URDF 是一种基于 XML 的文件格式，用于描述机器人的物理结构、运动学、动力学、几何形状和关节配置。
+  - **Application 用途**：
+    - Define the structure and attributes of the robot model. 定义机器人模型的结构和属性。
+    - Load the robot in a simulator (such as Gazebo). 在仿真器（如 Gazebo）中加载机器人。
+    - It is used for visualization and control in the Robot Operating System (ROS). 在机器人操作系统（ROS）中用于可视化和控制。
+  - **Content 内容**：
+    This includes the geometry, size, mass, inertia, joint type (such as rotary joints, sliding joints) and connection method of each component of the robot. 包括机器人每个部件的几何形状、大小、质量、惯性、关节类型（如旋转关节、滑动关节）及其连接方式。
+
+##### **2.1.3.1.2 Xacro (XML Macros)**
+- **Terminology 全称**：XML Macros(XML 宏)。
+- **Function 作用**：Xacro is an extended XML format specifically designed to simplify the writing of URDF files. Xacro 是一种扩展的 XML 格式，专门为简化 URDF 文件的编写而设计。
+- **Characteristic 特点**：
+  - 通过 **宏定义** 和 **参数化** 来减少重复代码。 Reduce repetitive code through **macro definitions** and **parameterization**.
+  - 提高复杂机器人模型的可读性和可维护性。 Improve the readability and maintainability of complex robot models.
+
+- **Application 用途**：
+  - Generate dynamic or complex URDF files. 生成动态或复杂的 URDF 文件。
+  - It is widely used in ROS to generate parametric robot descriptions. 在 ROS 中广泛用于生成参数化的机器人描述。
+
+##### **2.1.3.1.3 MJCF (MuJoCo XML Format)**
+- **Terminology 全称**：MuJoCo（Multi-Joint Dynamics with Contact）描述格式。
+- **Function 作用**：MJCF is an XML format dedicated to the MuJoCo simulator, used to define the dynamic models of robots or environments. MJCF 是 MuJoCo 仿真器专用的 XML 格式，用于定义机器人或环境的动力学模型。
+- **Characteristic 特点**：
+  - It focuses on physical simulation and supports high-precision dynamic calculations. 侧重物理仿真，支持高精度的动力学计算。
+  - It is able to define complex joint systems, contact models, controllers, etc. can be defined. 可定义复杂的关节系统、接触模型、控制器等。
+- **Application 用途**：
+  - Load the robot model in the MuJoCo simulator. 在 MuJoCo 仿真器中加载机器人模型。
+  - It is used for reinforcement learning and robot control research. 用于强化学习和机器人控制研究。
+
+
+#### **2.1.3.2. Application 用途**
+
+These formats are typically used to describe **object models in robots or simulation environments**, including: 这些格式通常用于描述**机器人或仿真环境中的物件模型**，包括：
+1. **Physical model of the robot 机器人物理模型**：
+   - Define the shape, size, position, joint type, etc. of each component of the robot. 定义机器人各部件的形状、大小、位置、关节类型等。
+   - Including various robot models such as robotic manipulations, wheeled robots, quadruped robots, etc.包括机器人臂、轮式机器人、四足机器人等各种机器人模型。
+2. **Environment Description 环境描述**：
+   - Define other objects in the simulation environment, such as obstacles, terrain, furniture, etc. 定义仿真环境中的其他物体，比如障碍物、地形、家具等。
+3. **Dynamics and kinematics simulation 动力学和运动学仿真**：
+   - Define the physical properties of the robot (such as mass and inertia tensor) and joint motion limitations for high-precision simulation in physical simulators (such as Gazebo and MuJoCo). 定义机器人的物理属性（如质量、惯性张量）和关节运动限制，用于物理仿真器（如 Gazebo、MuJoCo）中进行高精度仿真。
+4. **Visualization 可视化**：
+   - It is used to visualize robot models and help developers understand the structure and movement behavior of robots. 用于可视化机器人模型，帮助开发者理解机器人结构和运动行为。
+5. **机器人控制 Robot Control**：
+   - Import the model into the control system for tasks such as path planning and motion control. 将模型导入到控制系统中，用于路径规划、运动控制等任务。
+
+
+#### **2.1.3.3. Category 类别**
+
+These formats can be classified as **"object model description files in robot simulators"**, but more accurate terms include: 可以将这些格式归类为 **机器人仿真器中的物件模型描述文件**，但更准确的术语包括：
+
+##### **2.1.3.3.1 Robot description format 机器人描述格式**
+- They are file formats specifically designed to describe the structure, kinematics and dynamics of robots. 它们是专门用于描述机器人结构、运动学和动力学的文件格式。
+
+##### **2.1.3.3.2 Simulation environment model 仿真环境模型**
+- In addition to the robots themselves, they can also describe objects in the simulation environment, and thus can also be classified as **"object model description files in the simulator"**. 除了机器人本身，它们也可以描述仿真环境中的物体，因此也可以归为 **仿真器中的物件模型描述文件**。
+
+
+#### **2.1.3.4. Relationship and Differences 关系与区别**
+
+| **format 格式**  | **Describing object 描述对象**               | **Characteristic 特点**                                                                                       | **Scenarios 常用场景**                          |
+|-----------|----------------------------|------------------------------------------------------------------------------------------------|---------------------------------------|
+| **URDF**  | robot model 机器人模型                | 简单、直接，适合静态和基本的机器人描述。 Simple and straightforward, suitable for static and basic robot descriptions.                                                       | ROS中的机器人建模与仿真。            |
+| **Xacro** | Parametric robot model 参数化机器人模型          | XML-macro-extension-based URDF is more suitable for the description of complex robot models and supports code reuse and dynamic generation. 基于 XML 宏扩展的 URDF，更适合复杂机器人模型的描述，支持代码复用和动态生成。                     | Generate complex URDF files for ROS simulation. 生成复杂 URDF 文件，用于 ROS 仿真。   |
+| **MJCF**  | Robots and environmental models 机器人和环境模型          | Emphasizing dynamic simulation, supporting complex contact modeling, it is more often used in reinforcement learning and robot control research. 强调动力学仿真，支持复杂的接触建模，更多用于强化学习和机器人控制研究。                          | MuJoCo 仿真器（如 OpenAI Gym 环境）。 |
+
+
+#### **2.1.3.5. Usage tools and Simulator support 它们的使用工具和仿真器支持**
+
+- **URDF 和 Xacro**：
+  - **Support Tool 支持工具**：ROS（Robot Operating System）。
+  - **Support Simulator 支持仿真器**：CoppeliaSim(V-ERP), Gazebo、RViz 等 ROS 生态中的工具。 Tools in the ROS ecosystem such as CoppeliaSim(V-ERP), Gazebo, and RViz.
+- **MJCF**：
+  - **Support Tool 支持工具**：MuJoCo（Multi-Joint Dynamics with Contact）。
+  - **Support Simulator 支持仿真器**：MuJoCo 仿真器，常与 OpenAI Gym 和强化学习框架结合使用。 The MuJoCo simulator, often used in combination with OpenAI Gym and reinforcement learning frameworks.
+
+
+#### **2.1.3.6. Sample Files 示例文件**
+
+##### **URDF Example 示例**
+```xml
+<robot name="simple_robot">
+  <link name="base_link">
+    <inertial>
+      <mass value="1.0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
+```
+
+##### **Xacro Example 示例**
+```xml
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="param_robot">
+  <xacro:property name="length" value="1.0"/>
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="${length} ${length} ${length}"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
+```
+
+##### **MJCF Example 示例**
+```xml
+<mujoco>
+  <worldbody>
+    <body name="box" pos="0 0 0">
+      <geom type="box" size="0.5 0.5 0.5" rgba="1 0 0 1"/>
+    </body>
+  </worldbody>
+</mujoco>
+```
+
+
+#### **2.1.3.7. Conclusion 总结**
+
+- **URDF, Xacro, MJCF** are model description files ** used to describe robots and simulation environments. **URDF, Xacro, MJCF** 是用于描述机器人和仿真环境的**模型描述文件**。
+- **URDF/Xacro** : Mainly used in ROS and Gazebo simulation environments, focusing on robot modeling. **URDF/Xacro**：主要用于 ROS 和 Gazebo 仿真环境，专注于机器人建模。
+- **MJCF** : Used in the MuJoCo simulator, it focuses on high-precision dynamic simulation. **MJCF**：用于 MuJoCo 仿真器，专注于高精度动力学仿真。
+- They are key tools for defining robot or object models in robot simulators and can be simply understood as **"object model description files in the simulator"**. 它们是机器人仿真器中定义机器人或物件模型的关键工具，可以简单理解为 **“仿真器中的物件模型描述文件”**。
+
 
 
 
 ## 2.2 Hardware - 硬件 <a id="hardware"></a>
-(Coming Soon...)  
+
 
 
 
@@ -739,6 +918,20 @@ Understanding the mathematical foundations, assumptions, and limitations of each
 
 ## 3.2 Model Predictive Control - 模型预测控制 <a id="Model-Predictive-Control"></a>
 
+- Implementation of Nonlinear Model Predictive Path-Following Control for an Industrial Robot 
+*T. Faulwasser, T. Weber, P. Zometa and R. Findeisen; IEEE Transactions on Control Systems Technology 2017 Vol. 25 Issue 4 Pages 1505-1511; DOI: 10.1109/tcst.2016.2601624*
+
+---
+
+- Trajectory Generation for Multiagent Point-To-Point Transitions via Distributed Model Predictive Control 
+*C. E. Luis and A. P. Schoellig; IEEE Robotics and Automation Letters 2019 Vol. 4 Issue 2 Pages 375-382; DOI: 10.1109/lra.2018.2890572*
+
+---
+
+- Predictive End-Effector Control of Manipulators on Moving Platforms Under Disturbance 
+*J. Woolfrey, W. Lu and D. Liu; IEEE Transactions on Robotics 2021 Vol. 37 Issue 6 Pages 2210-2217; DOI: 10.1109/tro.2021.3072544*
+
+---
 
 - Confidence-Aware Object Capture for a Manipulator Subject to Floating-Base Disturbances 
 *R. Xu, Z. Jiang, B. Liu, Y. Wang and H. Qian; IEEE Transactions on Robotics 2024 Vol. 40 Pages 4396-4413; DOI: 10.1109/tro.2024.3463476*
@@ -776,19 +969,21 @@ Understanding the mathematical foundations, assumptions, and limitations of each
   **关键词**
   - 置信度分析，浮动基座机械臂，运动规划，目标捕获，波レット网络，贝叶斯方法，实时控制，无人艇，自动化系统
 
+<!-- --- -->
+
 <!-- ##
 - Confidence-Aware Object Capture for a Manipulator Subject to Floating-Base Disturbances 
 *R. Xu, Z. Jiang, B. Liu, Y. Wang and H. Qian; IEEE Transactions on Robotics 2024 Vol. 40 Pages 4396-4413; DOI: 10.1109/tro.2024.3463476* -->
 
 
 ## 3.3 Vision Language Model - 视觉-语言模型 <a id="Vision-Language-Model"></a>
-(Coming Soon...)  
+
 
 ## 3.4 Vision Language Action Model - 视觉-语言-动作模型 <a id="Vision-Language-Action"></a>
-(Coming Soon...)  
+
 
 ## 3.5 Dual System - 双系统 <a id="Dual-System"></a>
-(Coming Soon...)  
+
 
 
 # 4. Paper List Links - 论文列表链接 <a id="paper-list-link"></a>
@@ -804,7 +999,7 @@ Understanding the mathematical foundations, assumptions, and limitations of each
 
 本文转载/引用了一下一些团体/个人的内容，我们对他们的贡献表示感谢，以下是引用列表：
 
-[1] Course Materials from CUHK, Shenzhen [Introduction to Robotics](https://github.com/yimouwu/Robotics-and-Embodied-AI-Review/tree/main/Awesome%20Course%20Materials/Introduction%20to%20Robotics)，[2] Feishu Docs [木木具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink)，[3] Github repo [Embodied-AI-Guide](https://github.com/TianxingChen/Embodied-AI-Guide)，[4] Github repo [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI)
+[1] Course Materials from CUHK, Shenzhen [Introduction to Robotics](https://github.com/yimouwu/Robotics-and-Embodied-AI-Review/tree/main/Awesome%20Course%20Materials/Introduction%20to%20Robotics)，[2] Feishu Docs [Xbot具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink)，[3] Github repo [Embodied-AI-Guide](https://github.com/TianxingChen/Embodied-AI-Guide)，[4] Github repo [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI)
 
 ####
 # About us - 关于我们
