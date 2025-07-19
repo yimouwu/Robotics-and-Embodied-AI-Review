@@ -125,9 +125,9 @@
 
 # 0. Useful Info - 优质资源链接 <a id="links"></a>
 
+###### - [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI) - 具身经典开源项目
 ###### - [Xbot具身知识库](https://yv6uc1awtjc.feishu.cn/wiki/WPTzw9ON0ivIVrkLjVocNZh8nLf?from=from_copylink) - Xbot具身智能知识库
 ###### - [Embodied-AI-Guide](https://github.com/tianxingchen/Embodied-AI-Guide) - 具身智能系统性学习指南
-###### - [Awesome-Embodied-AI](https://github.com/yunlongdong/Awesome-Embodied-AI) - 具身经典开源项目
 ###### - [具身智能招贤榜](https://github.com/StarCycle/Awesome-Embodied-AI-Job) - 业界学界招聘信息
 <!-- ###### - [Writing AI Conference Papers: A Handbook for Beginners](https://github.com/hzwer/WritingAIPaper) - AI方向如何写论文
 ###### - [Hyperparameter-Optimization-of-Machine-Learning-Algorithms](https://github.com/LiYangHart/Hyperparameter-Optimization-of-Machine-Learning-Algorithms) - 机器学习算法的超参数优化 -->
@@ -137,6 +137,25 @@
 
 # 1. Research Areas Guide - 研究领域入门指南 <a id="research-areas-guide"></a>
 
+## Classical Courses 经典课程
+
+ ###### - [Advanced Robotics at UC Berkeley by Pieter Abbeel (Fall 2019) CS287 高级机器人技术 加州伯克利](https://www.bilibili.com/video/BV1h7411A7B9/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 这门课是机器人的进阶课程，适合在学习完‘现代机器人 Modern Robotics’或者有相应基础后进一步学习。涉及的部分有**马尔科夫决策过程**，**LQR控制**，**在约束条件下的最优化问题**，**基于最优化的控制**，**运动规划**，**卡尔曼滤波**，**模仿学习**，**强化学习**，**Sim2Real**等等。课程中还涉及了很多实操演示，有助于进一步了解理论在真实世界中的应用。
+
+  ###### - [Modern Robotics 现代机器人 美国西北大学](https://www.bilibili.com/video/BV1GJ411k7fE?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 这门课侧重于基础的机器人理论，涉及的概念有**笛卡尔坐标系**，**关节坐标系**，**自由度**，**齐次旋转矩阵**，**正运动学（FK）**， **逆运动学（IK）** 等等，适合零基础入门。
+
+  ###### - [Introduction to Artificial Intelligence 人工智能导论 CS188 伯克利](https://www.bilibili.com/video/BV1F1qpYwEgy/?spm_id_from=333.788.videopod.sections&vd_source=180b6da13847c26de9d19ac71e61c7fe) 这门课是伯克利经典的**人工智能入门课程**，适合零基础学习或作为AI领域的系统性入门。课程内容涵盖**搜索算法**、**博弈树**、**强化学习**、**概率推理**、**机器学习**基础等核心主题，并通过Pac-Man游戏项目将理论转化为实践。课程还涉及**马尔可夫决策过程（MDP）**、**贝叶斯网络**等进阶内容，为后续学习更高级的AI技术（如深度学习、机器人学）打下坚实基础。
+
+  ###### - [Machine Learning 机器学习 CS229 斯坦福](https://www.bilibili.com/video/BV1YtB2YXEne/?spm_id_from=333.788.videopod.sections&vd_source=180b6da13847c26de9d19ac71e61c7fe) 这门课是斯坦福大学经典的机器学习权威课程，适合具备一定数学基础（线性代数、概率统计）的学习者系统入门机器学习。课程内容覆盖**监督学习（线性回归、逻辑回归、SVM）**、**无监督学习（聚类、降维）**、**深度学习基础**、**贝叶斯方法**以及**机器学习实践中的调参技巧**等核心内容。通过理论推导与编程作业相结合的方式，帮助学习者掌握从数学原理到代码实现的完整链条，是进阶AI领域不可错过的奠基课程。
+  
+###### - [Foundations of Deep RL -- 6-lecture series by Pieter Abbeel 深度强化学习基础](https://www.youtube.com/watch?v=2GwBez0D20A&list=PLwRJQ4m4UJjNymuBM9RdmB3Z9N5-0IlY0&index=1) 这门由加州伯克利Pieter Abbeel教授主讲的**深度强化学习**精要课程，通过6次讲座系统性地讲解了深度强化学习的核心理论与前沿应用。课程内容涵盖**强化学习基础**（MDP、贝尔曼方程）、**价值函数方法**（DQN及其变种）、**策略梯度算法**（REINFORCE、PPO）、**Actor-Critic框架**等关键技术，并深入探讨了**模仿学习**、**元强化学习**、**多智能体系统**等进阶主题。课程结合大量**机器人控制**、**游戏AI**等实际案例，特别适合已掌握传统强化学习基础（如CS188）并希望深入深度强化学习领域的学习者。Abbeel教授以清晰的数学推导配合PyTorch代码实现，帮助学习者建立从理论到实践的全栈认知。
+
+###### - [Computer Vision CS231N by Fei-fei Li 李飞飞 斯坦福 计算机视觉](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) 这门由斯坦福大学李飞飞教授主讲的**计算机视觉标杆课程**，系统性地介绍了**深度学习**时代的**计算机视觉核心技术**。课程从**图像分类**、**卷积神经网络(CNN)**的基础原理出发，逐步深入到**目标检测**（**R-CNN**、**YOLO**）、**语义分割**、**视觉注意力机制**、**生成模型**（**GAN**、**Diffusion**）等前沿方向，并结合**PyTorch/TensorFlow**实现细节进行讲解。课程特别强调理论与实践的结合，通过精心设计的作业（如从零实现CNN、风格迁移等），帮助学习者掌握将数学公式转化为高效代码的能力。适合具备Python和线性代数基础，希望进入计算机视觉或多媒体AI领域的学习者，是CV研究者公认的"必修课"。
+
+###### - [Deep Reinforcement Learning CS285 by Sergey Levine 加州伯克利 深度强化学习课程 (Fall 2021)](https://www.bilibili.com/video/BV1fT4y1o7TS/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 这门由加州伯克利Sergey Levine教授主讲的**深度强化学习高阶课程**，是**机器人学与AI**领域最具影响力的前沿课程之一。课程从**深度RL基础理论**（贝尔曼方程、策略梯度）出发，系统性地讲解了**基于模型的RL**（MBRL）、**逆强化学习**（IRL）、**离线强化学习**（Offline RL）、**多任务迁移学习**等尖端技术，并深入剖析了**机器人控制**、**自动驾驶**等工业级应用场景。课程特别注重算法实现细节，通过PyTorch框架的编程作业（如实现PPO、SAC等算法），培养学习者解决复杂决策问题的工程能力。适合已完成CS188或基础RL课程，并希望掌握DRL前沿技术的研究者与工程师，被公认为进入深度强化学习领域的黄金标准课程。
+
+###### - [Robotic Manipulation (Fall 2021) by Russ Tedrake 麻省理工 MIT 机器人操作](https://www.bilibili.com/video/BV1Xf4y1E7sK/?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe) 这门由MIT Russ Tedrake教授主讲的**机器人操作权威课程**，系统性地讲解了现代机器人操作的核心理论与前沿算法。课程内容涵盖**刚体运动学**、**抓取力学**、**接触建模**、**轨迹优化**、**运动规划**等基础理论，并深入探讨了**基于优化的控制**、**鲁棒抓取规划**、**柔性物体操作**等尖端技术。 课程特别强调**算法实现与物理仿真**，通过Drake仿真框架和Python编程实践，帮助学习者掌握从理论到机器人系统落地的完整技术链条。Tedrake教授以其深厚的理论功底和丰富的工业经验，将复杂的机器人操作问题分解为直观的数学表达和可实现的算法方案。 适合已掌握现代机器人学基础（如机器人运动学、控制理论）并希望深入研究机器人操作领域的学习者，是进入工业机器人、服务机器人等领域的黄金课程。课程中大量来自MIT机器人实验室的真实案例（如灵巧手操作、仓储机器人等），为学习者提供了宝贵的工程实践参考。
+
+---
 
 ## 1.1 Fundamentals of Robotics - 机器人学基础 <a id="Fundamentals-of-Robotics"></a>
 
@@ -349,6 +368,13 @@ The configuration of a robot manipulator is determined by joint angles (variable
 
 ##### 1.3.5.1.1 Markovian Decision Process - 马尔可夫决策过程 <a id="Markovian-Decision-Process"></a>
 
+**Markov Process** is a stochastic model describing how a system evolves over time, characterized by the **memoryless property**: the future state depends only on the current state, not the past history. It forms the foundation of environment modeling in robotics and reinforcement learning. **马尔可夫过程**是描述系统状态随时间演化的一种随机模型，其核心特性是**无记忆性**，即未来的状态仅依赖于当前状态，与过去的状态无关。它是机器人学和强化学习中环境建模的基础。
+
+- **Markov Property 马尔可夫性质**：\( P(s_{t+1} | s_t) = P(s_{t+1} | s_1, s_2, \ldots, s_t) \)
+- **Applications 应用**：
+  - **Markov Decision Process 马尔可夫决策过程 (MDP)**：A key framework in reinforcement learning. 强化学习中常用的环境建模框架。
+  - Robot path planning and decision-making. 机器人路径规划和决策。
+  - Dynamic system modeling. 动态系统建模。
 
 ### Summary
 - Search-based methods 基于搜索的方法
@@ -380,7 +406,19 @@ The configuration of a robot manipulator is determined by joint angles (variable
 
 ### Introduction
 
-The **Kalman Filter** is a mathematical algorithm that provides an efficient computational solution to estimate the state of a dynamic system from a series of incomplete and noisy measurements. It is widely used in control systems, navigation, signal processing, and econometrics due to its ability to extract useful information from noisy data. 卡尔曼滤波是一种数学算法，它提供了一种有效的计算解决方案，从一系列不完整和有噪声的测量中估计动态系统的状态。由于它能够从噪声数据中提取有用的信息，因此被广泛应用于控制系统、导航、信号处理和计量经济学中。
+The **Kalman Filter** is a mathematical algorithm that provides an efficient computational solution to estimate the state of a dynamic system from a series of incomplete and noisy measurements. It is widely used in control systems, navigation, signal processing, and econometrics due to its ability to extract useful information from noisy data. **卡尔曼滤波**是一种数学算法，它提供了一种有效的计算解决方案，从一系列不完整和有噪声的测量中估计动态系统的状态。由于它能够从噪声数据中提取有用的信息，因此被广泛应用于控制系统、导航、信号处理和计量经济学中。
+
+**Kalman Filter** is a recursive estimation algorithm used to optimize the estimation of a dynamic system's state, particularly under noisy conditions. It is widely applied in robotics for localization, navigation, and sensor fusion. **卡尔曼滤波**是一种递归估计算法，用于优化动态系统的状态估计，特别是在存在噪声的情况下。它被广泛应用于机器人学中的定位、导航和传感器数据融合。
+
+- **Features 特点**：
+  - Works for linear systems. 适用于线性系统。
+  - Assumes Gaussian noise. 假设噪声为高斯分布。
+- **Steps 步骤**：
+  1. **Prediction 预测**：Predict the next state using the system model. 根据系统模型预测下一状态。
+  2. **Update 更新**：Correct the prediction using measurement data. 结合测量值修正预测值。
+- **Applications 应用**：
+  - Robot localization (e.g., SLAM: Simultaneous Localization and Mapping). 机器人定位（SLAM：同步定位与建图）。
+  - Sensor fusion (e.g., combining IMU and GPS data). 传感器数据融合（如 IMU 和 GPS 数据的结合）。
 
 
 ### 1.4.1.1. What is the Kalman Filter?
@@ -398,289 +436,448 @@ The Kalman Filter is a recursive estimator that estimates the state of a discret
 The Kalman Filter assumes the following: 卡尔曼滤波器假设如下
 
 - The system is **linear**. 该系统是线性的。
-- The system dynamics and measurement equations are known. 系统动力学和测量方程是已知的。
+- The **system dynamics and measurement equations** are known. **系统动力学和测量方程**是已知的。
 - The process noise and measurement noise are both **Gaussian**, with zero mean and known covariance. 过程噪声和测量噪声均为**高斯噪声**，均值为零，协方差已知。
 
 **State-Space Representation 状态空间表示:** 
 
-The system can be represented in state-space form:
+<!-- The system can be represented in state-space form: 系统可以用状态空间的形式表示：
 
-1. **State Equation (Process Model):**
+1. **State Equation (Process Model) 状态方程（过程模型）:**
    \[
    \mathbf{x}_{k} = \mathbf{A}_{k}\mathbf{x}_{k-1} + \mathbf{B}_{k}\mathbf{u}_{k} + \mathbf{w}_{k}
    \]
 
-2. **Measurement Equation:**
+2. **Measurement Equation 测量方程:**
    \[
    \mathbf{z}_{k} = \mathbf{H}_{k}\mathbf{x}_{k} + \mathbf{v}_{k}
    \]
 
 **Where:**
 
-- \(\mathbf{x}_{k}\): State vector at time \(k\).
-- \(\mathbf{A}_{k}\): State transition matrix.
-- \(\mathbf{B}_{k}\): Control input matrix.
-- \(\mathbf{u}_{k}\): Control input vector.
-- \(\mathbf{w}_{k}\): Process noise (assumed to be Gaussian with covariance \(\mathbf{Q}_{k}\)).
-- \(\mathbf{z}_{k}\): Measurement vector at time \(k\).
-- \(\mathbf{H}_{k}\): Measurement matrix.
-- \(\mathbf{v}_{k}\): Measurement noise (assumed to be Gaussian with covariance \(\mathbf{R}_{k}\)).
+- \(\mathbf{x}_{k}\): State vector at time \(k\). 时间\(k\)时的状态向量。
+- \(\mathbf{A}_{k}\): State transition matrix. 状态转移矩阵。
+- \(\mathbf{u}_{k}\): Control input vector. 控制输入向量。
+- \(\mathbf{B}_{k}\): Control input matrix. 控制输入矩阵。
+- \(\mathbf{w}_{k}\): Process noise (assumed to be Gaussian with covariance \(\mathbf{Q}_{k}\)). 过程噪声（假设为高斯（分布），协方差为\(\mathbf{Q}_{k}\)）。
+- \(\mathbf{z}_{k}\): Measurement vector at time \(k\). 在时间\(k\)的测量向量。
+- \(\mathbf{H}_{k}\): Measurement matrix. 测量矩阵。
+- \(\mathbf{v}_{k}\): Measurement noise (assumed to be Gaussian with covariance \(\mathbf{R}_{k}\)). 测量噪声（假设为高斯（分布），协方差为\(\mathbf{R}_{k}\)）。 -->
+![alt text](image/image21.png)
+
+![alt text](image/image23.png)
 
 
-### 1.4.1.2. Variants of the Kalman Filter
+#### 1.4.1.1.3. Applications for Linear Kalman Filter
 
-Due to limitations in the basic Kalman Filter (e.g., linearity assumptions), several variants have been developed to handle nonlinear systems, improve numerical stability, and address specific application requirements.
+- **Finance 金融:** Estimating market trends and filtering economic indicators. 估计市场趋势，过滤经济指标。
+- **Signal Processing 信号处理:** Noise reduction in signals, system identification. 信号降噪，系统识别。
+- **Control Systems 控制系统:** Classical control applications with linear dynamics. 经典控制应用与线性动力学。
 
-#### 1.4.1.2.1. Extended Kalman Filter (EKF)
+### 1.4.1.2. Variants of the Kalman Filter 卡尔曼滤波器的变体
+
+Due to limitations in the basic Kalman Filter (e.g., linearity assumptions), several variants have been developed to handle nonlinear systems, improve numerical stability, and address specific application requirements. 由于基础的卡尔曼滤波器的局限性（例如，线性假设），已经开发了几种变体来处理非线性系统，提高数值稳定性，并满足特定的应用要求。
+
+#### 1.4.1.2.1. Extended Kalman Filter (EKF) 扩展卡尔曼滤波
 
 ##### 1.4.1.2.1.1. Overview
 
 The EKF linearizes the nonlinear system around the current estimate using Taylor series expansion. It approximates the system dynamics and measurement equations to first-order terms. EKF利用泰勒级数展开对当前估计周围的非线性系统进行线性化。它将系统动力学和测量方程近似为一阶项。
 
-##### 1.4.1.2.1.2. Mathematical Formulation
+##### 1.4.1.2.1.2. Mathematical Formulation 数学公式
 
-For a system described by nonlinear functions: 对于由非线性函数描述的系统：
+<!-- For a system described by nonlinear functions: 对于由非线性函数描述的系统：
 
-- **Process Model:**
+- **Process Model 流程模型:**
   \[
   \mathbf{x}_{k} = f(\mathbf{x}_{k-1}, \mathbf{u}_{k}) + \mathbf{w}_{k}
   \]
 
-- **Measurement Model:**
+- **Measurement Model 测量模型:**
   \[
   \mathbf{z}_{k} = h(\mathbf{x}_{k}) + \mathbf{v}_{k}
   \]
 
-The EKF uses Jacobian matrices to linearize \(f\) and \(h\):
+EKF（扩展卡尔曼滤波）使用雅可比矩阵对\(f\)和\(h\)进行线性化 The EKF uses Jacobian matrices to linearize \(f\) and \(h\):
 
-- **State Transition Jacobian:**
+- **State Transition Jacobian 状态转移雅可比矩阵:**
   \[
   \mathbf{F}_{k} = \left. \frac{\partial f}{\partial \mathbf{x}} \right|_{\hat{\mathbf{x}}_{k-1}}
   \]
 
-- **Measurement Jacobian:**
+- **Measurement Jacobian 测量雅可比矩阵:**
   \[
   \mathbf{H}_{k} = \left. \frac{\partial h}{\partial \mathbf{x}} \right|_{\hat{\mathbf{x}}_{k}}
-  \]
+  \] -->
+  ![alt text](image/image22.png)
 
-##### 1.4.1.2.1.3. Applications
+  ![alt text](image/image24.png)
 
-- **Navigation Systems:** Aerospace and marine navigation where the motion dynamics are nonlinear.
-- **Robotics:** Mobile robot localization and mapping (SLAM).
-- **Tracking Systems:** Radar and sonar tracking of maneuvering targets.
+##### 1.4.1.2.1.3. Applications 应用
 
-#### 1.4.1.2.2. Unscented Kalman Filter (UKF)
+- **Navigation Systems 导航系统:** Aerospace and marine navigation where the motion dynamics are nonlinear. 运动动力学非线性的航空航天和航海。
+- **Robotics 机器人学:** Mobile robot localization and mapping (SLAM). 移动机器人定位与制图（SLAM）。
+- **Tracking Systems 追踪系统:** Radar and sonar tracking of maneuvering targets. 机动目标的雷达和声纳跟踪。
+- **Biomedical Engineering 生物医学工程:** Heart rate estimation from noisy measurements. 从噪声测量中估计心率。
+
+#### 1.4.1.2.2. Unscented Kalman Filter (UKF) 无迹卡尔曼滤波器
 
 ##### 1.4.1.2.2.1. Overview
 
-The UKF addresses the inaccuracies arising from linearization in the EKF by using deterministic sampling (sigma points) to capture the mean and covariance estimates more accurately.
+The UKF addresses the inaccuracies arising from linearization in the EKF by using deterministic sampling (sigma points) to capture the mean and covariance estimates more accurately. UKF通过使用确定性采样（西格玛点）来更准确地捕获平均值和协方差估计，从而解决了EKF中线性化引起的不准确性。
 
-##### 1.4.1.2.2.2. Sigma Points
+##### 1.4.1.2.2.2. Sigma Points 西格马点
 
-The UKF generates a set of sigma points that are propagated through the nonlinear functions:
+The UKF generates a set of sigma points that are propagated through the nonlinear functions UKF生成一组sigma点，这些点通过非线性函数传播：:
 
-- Captures up to the second-order statistics of the Gaussian distribution.
-- Provides better approximations for nonlinear transformations.
+- Captures up to the second-order statistics of the Gaussian distribution. 捕获高斯分布的二阶统计量。
+- Provides better approximations for nonlinear transformations. 为非线性变换提供更好的近似。
 
-##### 1.4.1.2.2.3. Applications
+##### 1.4.1.2.2.3. Applications 应用
 
-- **Nonlinear Control Systems:** Where higher accuracy is needed over the EKF.
-- **sensor fusion:** Combining data from multiple sensors with nonlinear measurements.
-- **Autonomous Vehicles:** State estimation in complex dynamic environments.
+- **Nonlinear Control Systems 非线性控制系统:** Where higher accuracy is needed over the EKF. 需要比EKF更高精度的地方。
+- **sensor fusion 传感器融:** Combining data from multiple sensors with nonlinear measurements. 将多个传感器的数据与非线性测量相结合。
+- **Autonomous Vehicles 自动驾驶车辆:** State estimation in complex dynamic environments. 复杂动态环境下的状态估计。
 
-#### 1.4.1.2.3. Error-State Kalman Filter (ESKF)
+#### 1.4.1.2.3. Error-State Kalman Filter (ESKF) 误差状态卡尔曼滤波器
 
 ##### 1.4.1.2.3.1. Overview
 
 The ESKF estimates the error between the estimated state and the true state, rather than estimating the state directly. This is particularly useful for systems where the state variables exhibit slow changes or when initial estimates are available. ESKF估计 估计状态 和 真实状态 之间的误差，而不是直接估计状态。这对于状态变量表现出缓慢变化或初始估计可用的系统特别有用。
 
-##### 1.4.1.2.3.2. Advantages
+##### 1.4.1.2.3.2. Mathematical Formulation 数学公式
 
-- **Numerical Stability:** By focusing on small errors, numerical issues due to large state values are minimized. **数值稳定性：** 通过关注小误差，由于大状态值的数值问题被最小化。
-- **Simplified Linearization:** The error dynamics are often more linear than the state dynamics, simplifying the computation. **简化线性化：** 误差动力学通常比状态动力学更线性，简化了计算。
+![alt text](image/image25.png)
 
-##### 1.4.1.2.3.3. Applications
+##### 1.4.1.2.3.3. Advantages 优势
 
-- **Inertial Navigation Systems (INS):** Where small errors in position, velocity, and orientation need to be accurately estimated. **惯性导航系统（INS）：** 需要精确估计位置、速度和方向的小误差。
-- **Robotics:** Precise localization and mapping, especially in SLAM applications. **机器人：** 精确定位和绘图，特别是在SLAM应用中。
-- **Aerospace:** Attitude estimation for aircraft and satellites. **航空航天：** 飞机和卫星的姿态估计。
+- **Numerical Stability 数值稳定性:** By focusing on small errors, numerical issues due to large state values are minimized. 通过关注小误差，由于大状态值的数值问题被最小化。
+- **Simplified Linearization 简化线性化:** The error dynamics are often more linear than the state dynamics, simplifying the computation. 误差动力学通常比状态动力学更线性，简化了计算。
 
-#### 1.4.1.2.4. Square Root Kalman Filter (SRKF)
+##### 1.4.1.2.3.4. Applications 应用
+
+
+- **Mobile Robotics 移动机器人:** High-precision localization in GPS-denied environments. 在gps拒绝的环境中进行高精度定位。
+- **Virtual Reality (VR) 虚拟现实:** Head and motion tracking for immersive experiences. 沉浸式体验的头部和运动跟踪。
+- **Inertial Measurement Unit (IMU) Integration 惯性测量单元（IMU）集成:** Correcting drift errors in accelerometers and gyroscopes. 修正加速度计和陀螺仪的漂移误差。
+- **Inertial Navigation Systems (INS) 惯性导航系统:** Where small errors in position, velocity, and orientation need to be accurately estimated. 需要精确估计位置、速度和方向的小误差。
+- **Robotics 机器人:** Precise localization and mapping, especially in SLAM applications. 精确定位和绘图，特别是在SLAM应用中。
+- **Aerospace 航空航天:** Attitude estimation for aircraft and satellites. 飞机和卫星的姿态估计。
+
+#### 1.4.1.2.4. Square Root Kalman Filter (SRKF) 平方根卡尔曼滤波
 
 ##### 1.4.1.2.4.1. Overview
 
-The SRKF maintains the square root of the covariance matrix to improve numerical stability.
+The SRKF maintains the square root of the covariance matrix to improve numerical stability. SRKF保持协方差矩阵的平方根以提高数值稳定性。
 
-##### 1.4.1.2.4.2. Advantages
+##### 1.4.1.2.4.2. Advantages 优势
 
-- **Numerical Stability:** Avoids direct computation of the covariance matrix, reducing round-off errors.
-- **Positive Definiteness:** Ensures the covariance matrix remains positive definite.
+- **Numerical Stability 数值稳定性:** Avoids direct computation of the covariance matrix, reducing round-off errors. 避免直接计算协方差矩阵，减少舍入误差。
+- **Positive Definiteness  正定性:** Ensures the covariance matrix remains positive definite. 确保协方差矩阵保持正定。
 
-##### 1.4.1.2.4.3. Applications
+##### 1.4.1.2.4.3. Applications 应用
 
-- **High-Precision Systems:** Where numerical errors can accumulate over time.
-- **Large-Scale Systems:** With significant computational demands.
+- **High-Precision Systems 高精度的系统:** Where numerical errors can accumulate over time. 随着时间的推移，数值误差会累积。
+- **Space Missions 太空任务:** Deep space navigation where precision is critical. 精度至关重要的深空导航。
+- **Large-Scale Systems:** With significant computational demands. 有大量的计算需求。
 
-#### 1.4.1.2.5. Information Filter (Inverse Covariance Filter)
+
+#### 1.4.1.2.5. Information Filter (Inverse Covariance Filter) 信息滤波（逆协方差滤波）
 
 ##### 1.4.1.2.5.1. Overview
 
-The Information Filter operates on the information matrix (inverse of the covariance matrix) and information vector.
+The Information Filter operates on the information matrix (inverse of the covariance matrix) and information vector. 信息过滤器对信息矩阵（协方差矩阵的逆）和信息向量进行操作。
 
-##### 1.4.1.2.5.2. Advantages
+##### 1.4.1.2.5.2. Advantages 优势
 
-- **Sparsity Exploitation:** Efficient for systems where the information matrix is sparse.
-- **Distributed Estimation:** Facilitates decentralized estimation in networked systems.
+- **Sparsity Exploitation 稀疏剥削:** Efficient for systems where the information matrix is sparse. 对于信息矩阵稀疏的系统是有效的。
+- **Distributed Estimation 分布估计:** Facilitates decentralized estimation in networked systems. 促进网络系统中的分散估计。
 
-##### 1.4.1.2.5.3. Applications
+##### 1.4.1.2.5.3. Applications 应用
 
-- **Sensor Networks:** Distributed state estimation.
-- **Multi-Robot Systems:** Where robots share information to estimate a common state.
+- **Sensor Networks 传感器网络:** Distributed state estimation. 分布式状态估计
+- **Multi-Robot Systems 多机器人系统:** Where robots share information to estimate a common state. 机器人共享信息来估计一个共同的状态。
 
-#### 1.4.1.2.6. Ensemble Kalman Filter (EnKF)
+#### 1.4.1.2.6. Ensemble Kalman Filter (EnKF) 集合卡尔曼滤波器
 
 ##### 1.4.1.2.6.1. Overview
 
-The EnKF uses a Monte Carlo approach with an ensemble of random samples to estimate the state distribution.
+The EnKF uses a Monte Carlo approach with an ensemble of random samples to estimate the state distribution. EnKF使用蒙特卡罗方法和随机样本集合来估计状态分布。
 
-##### 1.4.1.2.6.2. Applications
+##### 1.4.1.2.6.2. Applications 应用
 
-- **Meteorology:** Weather prediction and climate modeling.
-- **Oceanography:** Estimating ocean states from sparse measurements.
+- **Meteorology 气象学:** Weather prediction and climate modeling. 天气预报和气候模拟。
+- **Oceanography 海洋学:** Estimating ocean states from sparse measurements. 从稀疏测量估计海洋状态。
 
-#### 1.4.1.2.7. Particle Filter (Sequential Monte Carlo Methods)
+#### 1.4.1.2.7. Particle Filter (Sequential Monte Carlo Methods) 粒子滤波（顺序蒙特卡罗方法）
 
-Although not a Kalman filter, particle filters are similar recursive Bayesian estimators suitable for highly nonlinear and non-Gaussian systems.
-
-
-
-### 1.4.1.3. Applications of Different Kalman Filter Variants
-
-#### 1.4.1.3.1. Linear Kalman Filter
-
-- **Finance:** Estimating market trends and filtering economic indicators.
-- **Signal Processing:** Noise reduction in signals, system identification.
-- **Control Systems:** Classical control applications with linear dynamics.
-
-#### 1.4.1.3.2. Extended Kalman Filter (EKF)
-
-- **GPS Navigation:** Position and velocity estimation.
-- **Robotics:** Odometry and sensor fusion for mobile robots.
-- **Biomedical Engineering:** Heart rate estimation from noisy measurements.
-
-#### 1.4.1.3.3. Unscented Kalman Filter (UKF)
-
-- **Aerospace Engineering:** Attitude and orbit determination for spacecraft.
-- **Automotive Applications:** Vehicle tracking and advanced driver-assistance systems (ADAS).
-- **Nonlinear System Identification:** Estimating parameters in complex models.
-
-#### 1.4.1.3.4. Error-State Kalman Filter (ESKF)
-
-- **Inertial Measurement Unit (IMU) Integration:** Correcting drift errors in accelerometers and gyroscopes.
-- **Mobile Robotics:** High-precision localization in GPS-denied environments.
-- **Virtual Reality (VR):** Head and motion tracking for immersive experiences.
-
-#### 1.4.1.3.5. Square Root Kalman Filter (SRKF)
-
-- **High-Precision Navigation:** Submarine and missile guidance systems.
-- **Space Missions:** Deep space navigation where precision is critical.
-
-#### 1.4.1.3.6. Information Filter
-
-- **Decentralized Estimation:** Collaborative tracking in sensor networks.
-- **Multisensor Data Fusion:** Integrating measurements from distributed sensors.
-
-#### 1.4.1.3.7. Ensemble Kalman Filter (EnKF)
-
-- **Geosciences:** Assimilating data from various sources for environmental modeling.
-- **Hydrology:** Estimating water flow and levels in river basins.
-
-
-### 1.4.1.4. Choosing the Appropriate Kalman Filter Variant
-
-#### 1.4.1.4.1. System Linearity
-
-- **Linear Systems:** Use the standard Kalman Filter.
-- **Mildly Nonlinear Systems:** EKF may suffice, but be cautious of linearization errors.
-- **Highly Nonlinear Systems:** UKF or particle filters are more appropriate.
-
-#### 1.4.1.4.2. Computational Resources
-
-- **Limited Resources:** EKF is less computationally intensive than UKF.
-- **High Accuracy Needed:** UKF provides better estimates at the expense of computation.
-
-#### 1.4.1.4.3. Noise Characteristics
-
-- **Gaussian Noise:** Standard KF, EKF, UKF assume Gaussian noise.
-- **Non-Gaussian Noise:** Particle filters or other nonlinear estimators are preferable.
-
-#### 1.4.1.4.4. Application Requirements
-
-- **Precision vs. Speed:** SRKF is preferred for precision, while standard KF is faster.
-- **Distributed Systems:** Information Filters are suitable for decentralized estimation.
+Although not a Kalman filter, particle filters are similar recursive Bayesian estimators suitable for highly nonlinear and non-Gaussian systems. 虽然不是卡尔曼滤波器，但粒子滤波器是类似于适用于高度非线性和非高斯系统的递归贝叶斯估计。
 
 
 
-### 1.4.1.5. Kalman Filter Algorithm Steps
+### 1.4.1.3. Choosing the Appropriate Kalman Filter Variant 选择合适的卡尔曼滤波器变体
 
-#### 1.4.1.5.1. Standard Kalman Filter Steps
+#### 1.4.1.3.1. System Linearity 系统线性
+- **Linear Systems 线性系统:** Use the standard Kalman Filter. 使用标准的卡尔曼滤波器。
+- **Mildly Nonlinear Systems 轻度非线性系统:** EKF may suffice, but be cautious of linearization errors. EKF可能足够了，但要小心线性化误差。
+- **Highly Nonlinear Systems 高度非线性系统:** UKF or particle filters are more appropriate. UKF(Unscented Kalman Filter)无迹卡尔曼滤波或粒子过滤器更合适。
 
-1. **Initialization:**
+#### 1.4.1.3.2. Computational Resources 计算资源
+
+- **Limited Resources 有限资源:** EKF is less computationally intensive than UKF. 与UKF相比，EKF的计算强度更小。
+- **High Accuracy Needed 需要高精度:** UKF provides better estimates at the expense of computation. UKF以计算为代价提供更好的估计。
+
+#### 1.4.1.3.3. Noise Characteristics 噪声特性
+
+- **Gaussian Noise 高斯噪声:** Standard KF, EKF, UKF assume Gaussian noise. 标准KF， EKF， UKF假设高斯噪声。
+- **Non-Gaussian Noise 非高斯噪声:** Particle filters or other nonlinear estimators are preferable. 粒子滤波器或其他非线性估计器是优选的。
+
+#### 1.4.1.3.4. Application Requirements 应用需求
+
+- **Precision vs. Speed 精度vs速度:** SRKF is preferred for precision, while standard KF is faster. SRKF精度较高，而标准KF速度更快。
+- **Distributed Systems 分布式系统:** Information Filters are suitable for decentralized estimation. 信息过滤器适用于分散估计。
+
+
+
+### 1.4.1.5. Kalman Filter Algorithm Steps 卡尔曼滤波算法步骤
+
+#### 1.4.1.5.1. Standard Kalman Filter Steps 标准卡尔曼滤波步骤
+##### 
+
+<!-- **State-Space Representation 状态空间表示:** 
+![alt text](image/image21.png) -->
+
+<!-- 1. **Initialization 初始化:**
    - Set initial state estimate \(\hat{\mathbf{x}}_{0}\) and covariance \(\mathbf{P}_{0}\).
 
-2. **Prediction Step:**
-   - Predict the next state:
+2. **Prediction Step 预测步骤:**
+   - Predict the next state 预测下一个状态:
      \[
      \hat{\mathbf{x}}_{k|k-1} = \mathbf{A}_{k}\hat{\mathbf{x}}_{k-1|k-1} + \mathbf{B}_{k}\mathbf{u}_{k}
      \]
-   - Predict the covariance:
+   - Predict the covariance 预测协方差:
      \[
      \mathbf{P}_{k|k-1} = \mathbf{A}_{k}\mathbf{P}_{k-1|k-1}\mathbf{A}_{k}^{T} + \mathbf{Q}_{k}
      \]
 
-3. **Update Step:**
-   - Compute the Kalman Gain:
+3. **Update Step 更新步骤:**
+   - Compute the Kalman Gain 计算卡尔曼增益:
      \[
      \mathbf{K}_{k} = \mathbf{P}_{k|k-1}\mathbf{H}_{k}^{T}(\mathbf{H}_{k}\mathbf{P}_{k|k-1}\mathbf{H}_{k}^{T} + \mathbf{R}_{k})^{-1}
      \]
-   - Update the estimate with measurement \(\mathbf{z}_{k}\):
+   - Update the estimate with measurement \(\mathbf{z}_{k}\) 用测量 \(\mathbf{z}_{k}\)更新估计:
      \[
      \hat{\mathbf{x}}_{k|k} = \hat{\mathbf{x}}_{k|k-1} + \mathbf{K}_{k}(\mathbf{z}_{k} - \mathbf{H}_{k}\hat{\mathbf{x}}_{k|k-1})
      \]
-   - Update the covariance:
+   - Update the covariance 更新协方差:
      \[
      \mathbf{P}_{k|k} = (\mathbf{I} - \mathbf{K}_{k}\mathbf{H}_{k})\mathbf{P}_{k|k-1}
-     \]
+     \] -->
+  ![alt text](image/image26.png)
+
+---
+
+The following is a detailed step-by-step explanation of the above Kalman filter algorithm steps, including the definition of each symbol and its corresponding relationship in the formula: 以下是上述卡尔曼滤波算法步骤的详细分步解释，包含每个符号的定义及其在公式中的对应关系：
+
+#### **1. Initialization 初始化**
+<!-- - **Symbol Definition 符号定义**：
+  - \(\hat{\mathbf{x}}_{0}\): Initial state estimation (such as the initial position and speed of the robot). 初始状态估计（如机器人的初始位置、速度）。
+  - \(\mathbf{P}_{0}\): The initial state covariance matrix represents the uncertainty of the initial estimation (the diagonal elements are the variance, and the non-diagonal elements are the correlations between states). 初始状态协方差矩阵，表示初始估计的不确定性（对角线元素为方差，非对角线为状态间的相关性）。
+- **作用 Role**：  
+  Provide the starting point of the filter, and the subsequent steps will be gradually updated based on this. 提供滤波器的起点，后续步骤将基于此逐步更新。 -->
+  ![alt text](image/image27.png)
+
+#### **2. Prediction Step 预测步骤**
+<!-- #### **(1) State Prediction 状态预测**
+\[
+\hat{\mathbf{x}}_{k|k-1} = \mathbf{A}_{k}\hat{\mathbf{x}}_{k-1|k-1} + \mathbf{B}_{k}\mathbf{u}_{k}
+\]
+- **符号定义**：
+  - \(\hat{\mathbf{x}}_{k|k-1}\): **Prior state estimation** at time \(k\) (without considering the current measurement). 在时间 \(k\) 的**先验状态估计**（未考虑当前测量）。
+  - \(\mathbf{A}_{k}\): **State transition matrix** (describing how the system evolves from the \(k-1\) moment to the \(k\) moment, such as kinematic models). **状态转移矩阵**（描述系统如何从 \(k-1\) 时刻演化到 \(k\) 时刻，如运动学模型）。
+  - \(\hat{\mathbf{x}}_{k-1|k-1}\): The posterior state estimation at time \(k-1\) (with the measurement from the previous time fused). \(k-1\) 时刻的**后验状态估计**（已融合上一时刻的测量）。
+  - \(\mathbf{B}_{k}\): **Control input matrix** (mapping the control input \(\mathbf{u}_{k}\) to the state space, such as the influence of acceleration on velocity). **控制输入矩阵**（将控制输入 \(\mathbf{u}_{k}\) 映射到状态空间，如加速度对速度的影响）。
+  - \(\mathbf{u}_{k}\): **Control input** (such as control signals for motors). **控制输入**（如电机的控制信号）。
+- **Physical Significance 物理意义**：  
+  Predict the current state based on the system dynamics and kinematics model. 基于系统动力学和运动学模型预测当前状态。 -->
+  ![alt text](image/image28.png)
+
+#### **(2) Covariance Prediction 协方差预测**
+<!-- \[
+\mathbf{P}_{k|k-1} = \mathbf{A}_{k}\mathbf{P}_{k-1|k-1}\mathbf{A}_{k}^{T} + \mathbf{Q}_{k}
+\]
+- **Symbol Definition 符号定义**：
+  - \(\mathbf{P}_{k|k-1}\): Prior state covariance (uncertainty of prediction). 先验状态协方差（预测的不确定性）。
+  - \(\mathbf{P}_{k-1|k-1}\): The posterior covariance at time \(k-1\). \(k-1\) 时刻的后验协方差。
+  - \(\mathbf{Q}_{k}\): Process noise covariance (model error, such as unmodeled external disturbances). 过程噪声协方差（模型误差，如未建模的外部扰动）。
+- **Physical Significance 物理意义**：  
+  The uncertainty of prediction comes from two parts 预测的不确定性来自两部分：  
+  1. The uncertainty of the previous moment is transmitted through \(\mathbf{A}_{k}\); 上一时刻的不确定性通过 \(\mathbf{A}_{k}\) 传递；  
+  2. Process noise \(\mathbf{Q}_{k}\) adds additional uncertainty. 过程噪声 \(\mathbf{Q}_{k}\) 增加额外不确定性。 -->
+  ![alt text](image/image29.png)
+
+---
+
+##### -> Derivation of the covariance prediction formula 协方差预测公式推导
+<!-- The covariance prediction formula in Kalman filtering 卡尔曼滤波中的**协方差预测公式**：
+\[
+\mathbf{P}_{k|k-1} = \mathbf{A}_{k}\mathbf{P}_{k-1|k-1}\mathbf{A}_{k}^{T} + \mathbf{Q}_{k}
+\]
+Its derivation stems from **uncertainty propagation** and **Gaussian properties of linear systems**. The following are the detailed steps: 其推导源于**不确定性传播**和**线性系统的高斯性质**，以下是详细步骤： -->
+![alt text](image/image30.png)
+
+###### **1. Theoretical Basis 理论基础**
+Suppose the system satisfies the following linear Gaussian model: 假设系统满足以下线性高斯模型：
+<!-- - **State Equation 状态方程**：
+  \[
+  \mathbf{x}_k = \mathbf{A}_k \mathbf{x}_{k-1} + \mathbf{B}_k \mathbf{u}_k + \mathbf{w}_k, \quad \mathbf{w}_k \sim \mathcal{N}(0, \mathbf{Q}_k)
+  \]
+  Here, \(\mathbf{w}_k\) is the process noise, and the covariance is \(\mathbf{Q}_k\). 其中 \(\mathbf{w}_k\) 是过程噪声，协方差为 \(\mathbf{Q}_k\)。
+
+- **State estimation of the previous moment 上一时刻的状态估计**：
+  \[
+  \hat{\mathbf{x}}_{k-1|k-1} \sim \mathcal{N}(\mathbf{x}_{k-1}, \mathbf{P}_{k-1|k-1})
+  \] -->
+  ![alt text](image/image31.png)
+
+###### **2. The definition of the covariance of the predicted state 预测状态的协方差定义**
+<!-- The covariance of the predicted state \(\hat{\mathbf{x}}_{k|k-1}\) is defined as: 预测状态 \(\hat{\mathbf{x}}_{k|k-1}\) 的协方差定义为：
+\[
+\mathbf{P}_{k|k-1} = \text{Cov}(\mathbf{x}_k - \hat{\mathbf{x}}_{k|k-1})
+\]
+Generation into the state equation and the prediction formula \(\hat{\mathbf{x}}_{k|k-1} = \mathbf{A}_k \hat{\mathbf{x}}_{k-1|k-1} + \mathbf{B}_k \mathbf{u}_k\), get: 代入状态方程和预测公式 \(\hat{\mathbf{x}}_{k|k-1} = \mathbf{A}_k \hat{\mathbf{x}}_{k-1|k-1} + \mathbf{B}_k \mathbf{u}_k\)，得到：
+\[
+\mathbf{x}_k - \hat{\mathbf{x}}_{k|k-1} = \mathbf{A}_k (\mathbf{x}_{k-1} - \hat{\mathbf{x}}_{k-1|k-1}) + \mathbf{w}_k
+\] -->
+![alt text](image/image32.png)
+
+###### **3. Covariance expansion 协方差展开**
+<!-- By using the properties of covariance  \(\text{Cov}(\mathbf{M}\mathbf{y}) = \mathbf{M} \text{Cov}(\mathbf{y}) \mathbf{M}^T\) and noise independence: 利用协方差的性质 \(\text{Cov}(\mathbf{M}\mathbf{y}) = \mathbf{M} \text{Cov}(\mathbf{y}) \mathbf{M}^T\) 和噪声独立性：
+\[
+\begin{aligned}
+\mathbf{P}_{k|k-1} &= \text{Cov}\left( \mathbf{A}_k (\mathbf{x}_{k-1} - \hat{\mathbf{x}}_{k-1|k-1}) + \mathbf{w}_k \right) \\
+&= \mathbf{A}_k \text{Cov}(\mathbf{x}_{k-1} - \hat{\mathbf{x}}_{k-1|k-1}) \mathbf{A}_k^T + \text{Cov}(\mathbf{w}_k) \\
+&= \mathbf{A}_k \mathbf{P}_{k-1|k-1} \mathbf{A}_k^T + \mathbf{Q}_k.
+\end{aligned}
+\] -->
+![alt text](image/image33.png)
+
+###### **4. Key Point Explanation 关键点解释**
+<!-- - **\(\mathbf{A}_k \mathbf{P}_{k-1|k-1} \mathbf{A}_k^T\)**：  
+  The state transition matrix \(\mathbf{A}_k\) maps the uncertainty \(\mathbf{P}_{k-1 | k-1}\) of the previous moment to the current moment and considers the influence of linear transformation on covariance. 状态转移矩阵 \(\mathbf{A}_k\) 将上一时刻的不确定性 \(\mathbf{P}_{k-1|k-1}\) 映射到当前时刻，并考虑线性变换对协方差的影响。
+- **\(\mathbf{Q}_k\)**：  
+  The additional uncertainty introduced by process noise, which is independent of the state estimation error. 过程噪声引入的额外不确定性，独立于状态估计误差。 -->
+  ![alt text](image/image34.png)
+
+###### **5. Intuitive Understanding 直观理解**
+<!-- - **Uncertainty Propagation 不确定性传播**：The error of state estimation propagates through system dynamics \(\mathbf{A}_k\), while superimposing the disturbance of process noise. 状态估计的误差通过系统动力学 \(\mathbf{A}_k\) 传播，同时叠加过程噪声的扰动。
+- **高斯分布的线性变换**：线性系统中，高斯状态经过线性变换后仍为高斯分布，协方差按此规律更新。 -->
+![alt text](image/image35.png)
+
+###### **6. Extended Scenarios 扩展场景**
+<!-- - **Extended Kalman Filter（EKF）Nonlinear System 非线性系统**：  
+  Use the Jacobian matrix \(\mathbf{F}_k\) instead of \(\mathbf{A}_k\), and approximately propagate the covariance after linearizing the local points: 使用雅可比矩阵 \(\mathbf{F}_k\) 代替 \(\mathbf{A}_k\)，在局部点线性化后近似传播协方差：
+  \[
+  \mathbf{P}_{k|k-1} = \mathbf{F}_k \mathbf{P}_{k-1|k-1} \mathbf{F}_k^T + \mathbf{Q}_k.
+  \] -->
+  ![alt text](image/image36.png)
+
+###### **Summary 总结**
+This formula is one of the cores of the Kalman filter. It quantifies the uncertainty in the prediction stage through the covariance propagation of the linear transformation and the superposition of noise, providing a basis for subsequent measurement updates. 该公式是卡尔曼滤波的核心之一，通过**线性变换的协方差传播**和**噪声叠加**，量化预测阶段的不确定性，为后续的测量更新提供基础。
+
+---
+
+#### **3. Update Step 更新步骤**
+#### **(1) Calculate the Kalman gain 计算卡尔曼增益**
+<!-- \[
+\mathbf{K}_{k} = \mathbf{P}_{k|k-1}\mathbf{H}_{k}^{T}(\mathbf{H}_{k}\mathbf{P}_{k|k-1}\mathbf{H}_{k}^{T} + \mathbf{R}_{k})^{-1}
+\]
+- **Symbol Definition 符号定义**：
+  - \(\mathbf{K}_{k}\): 卡尔曼增益（权衡预测与测量的权重）。 Kalman gain (weighing the weights of prediction and measurement).
+  - \(\mathbf{H}_{k}\): 观测矩阵（将状态映射到测量空间，如传感器只能观测位置而非速度）。Observation matrix (mapping states to the measurement space, such as sensors can only observe position rather than velocity).
+  - \(\mathbf{R}_{k}\): 测量噪声协方差（传感器误差）。 Measure the noise covariance (sensor error).
+- **Physical Significance 物理意义**：  
+  - 分母 \(\mathbf{H}_{k}\mathbf{P}_{k|k-1}\mathbf{H}_{k}^{T} + \mathbf{R}_{k}\) 是**预测测量**的不确定性。  The denominator \(\mathbf{H}_{k}\mathbf{P}_{k|k-1}\mathbf{H}_{k}^{T} + \mathbf{R}_{k}\) is **prediction measurement uncertainty**.
+  - Kalman gain decision more trust prediction (（\(\mathbf{K}_{k}\) small) or measurement (\(\mathbf{K}_{k}\) big). 卡尔曼增益决定更信任预测（\(\mathbf{K}_{k}\) 小）还是测量（\(\mathbf{K}_{k}\) 大）。 -->
+  ![alt text](image/image37.png)
+
+#### **(2) Update the State 状态更新**
+<!-- \[
+\hat{\mathbf{x}}_{k|k} = \hat{\mathbf{x}}_{k|k-1} + \mathbf{K}_{k}(\mathbf{z}_{k} - \mathbf{H}_{k}\hat{\mathbf{x}}_{k|k-1})
+\]
+- **Symbol Definition 符号定义**：
+  - \(\hat{\mathbf{x}}_{k|k}\): Posterior state estimation (optimal estimation after fusion measurement). 后验状态估计（融合测量后的最优估计）。
+  - \(\mathbf{z}_{k}\): Actual measured values (such as GPS readings). 实际测量值（如GPS读数）。
+  - \(\mathbf{z}_{k} - \mathbf{H}_{k}\hat{\mathbf{x}}_{k|k-1}\): **"New interest"** (Innovation, the difference between measurement and prediction). **新息**（Innovation，测量与预测的差异）。
+- **Physical Significance 物理意义**：  
+  The prediction state is corrected through the new interest, and the correction amount is controlled by the Kalman gain. 通过新息修正预测状态，修正量由卡尔曼增益控制。 -->
+  ![alt text](image/image38.png)
+
+#### **(3) Covariance Update 协方差更新**
+<!-- \[
+\mathbf{P}_{k|k} = (\mathbf{I} - \mathbf{K}_{k}\mathbf{H}_{k})\mathbf{P}_{k|k-1}
+\]
+- **Symbol Definition 符号定义**：
+  - \(\mathbf{P}_{k|k}\): Posterior covariance (updated uncertainty). 后验协方差（更新后的不确定性）。
+  - \(\mathbf{I}\): Identity Matrix 单位矩阵。
+- **Physical Significance 物理意义**：  
+  The fusion of measurements leads to a reduction in state uncertainty （\(\mathbf{P}_{k|k} \leq \mathbf{P}_{k|k-1}\)）, as quantified by the updated covariance matrix. 融合测量后，状态的不确定性降低（\(\mathbf{P}_{k|k} \leq \mathbf{P}_{k|k-1}\)）。 -->
+  ![alt text](image/image39.png)
+
+
+### **Symbol Summary Table 符号总结表**
+<!-- | Symbol 符号                 | Implication 含义                          | Corresponding formula position 对应公式位置               |
+|----------------------|-----------------------------|--------------------------|
+| \(\hat{\mathbf{x}}\) | State estimation (with a hat indicating an estimated value) 状态估计（带帽子表示估计值）       | All state equations 所有状态方程              |
+| \(\mathbf{P}\)       | State covariance matrix 状态协方差矩阵                 | Predict and update the covariance equation of the steps 预测和更新步骤的协方差方程  |
+| \(\mathbf{A}\)       | State Transition Matrix 状态转移矩阵                   | State Prediction Equation 状态预测方程              |
+| \(\mathbf{B}, \mathbf{u}\) | Control Input Matrix and Input Vector 控制输入矩阵和输入向量      | State Prediction Equation 状态预测方程              |
+| \(\mathbf{Q}\)       | Process noise covariance 过程噪声协方差                 | Covariance prediction equation 协方差预测方程            |
+| \(\mathbf{H}\)       | Measurement Matrix 观测矩阵                      | Kalman Gain and Update Equation 卡尔曼增益和更新方程       |
+| \(\mathbf{R}\)       | The covariance of Measure Noise 测量噪声协方差                 | Kalman gain denominator 卡尔曼增益分母            |
+| \(\mathbf{K}\)       | Kalman Gain 卡尔曼增益                    | State and Covariance Update Equation 状态和协方差更新方程       |
+| \(\mathbf{z}\)       | practical Measured Value 实际测量值                    | The new information term in the State Update Equation 状态更新方程中的新息项     | -->
+![alt text](image/image40.png)
+
+
+### **Intuitive Understanding 直观理解**
+The Kalman filter gradually optimizes the estimation through the **prediction-update** cycle: 卡尔曼滤波通过**预测-更新**循环逐步优化估计：  
+1. **Prediction 预测**：Predict the current state (including uncertainties) based on the model. 基于模型推测当前状态（含不确定性）。  
+2. **Update 更新**：The prediction is corrected with actual measurements, and the weights are dynamically adjusted by Kalman gain. 用实际测量修正预测，权重由卡尔曼增益动态调整。  
+3. **Core Idea 核心思想**：Optimal estimation is achieved through probabilistic fusion of Gaussian distributions. 通过高斯分布的概率融合，实现最优估计。  
+
+**Example 举例**：  
+- Robot positioning: Predicted position (including error) + GPS measurement (including noise) → More accurate position estimation. 机器人定位：预测位置（含误差） + GPS测量（含噪声） → 更精确的位置估计。
 
 #### 1.4.1.5.2. EKF and UKF Adaptations
 
-- **EKF:** Incorporate Jacobians in prediction and update steps.
-- **UKF:** Use sigma points to approximate the distributions.
+- **EKF:** Incorporate Jacobians in prediction and update steps. 在预测和更新步骤中加入雅可比矩阵。
+- **UKF:** Use sigma points to approximate the distributions. 用sigma点来近似分布。
 
 
 
 ### 1.4.1.6. Practical Considerations
 
-#### 1.4.1.6.1. Tuning the Filter
+#### 1.4.1.6.1. Tuning the Filter 微调滤波器
 
-- **Process Noise Covariance (\(\mathbf{Q}\)):** Adjust to reflect how much uncertainty is in the model.
-- **Measurement Noise Covariance (\(\mathbf{R}\)):** Set based on the accuracy of the sensors.
+- **Process Noise Covariance (\(\mathbf{Q}\)):** Adjust to reflect how much uncertainty is in the model. 调整以反映模型中有多少不确定性。
+- **Measurement Noise Covariance (\(\mathbf{R}\)):** Set based on the accuracy of the sensors. 根据传感器的精度设置。
 
-#### 1.4.1.6.2. Initialization
+#### 1.4.1.6.2. Initialization 初始化
 
-- **State Estimate:** Should be as close as possible to the true initial state.
-- **Covariance Matrix:** Reflect the confidence in the initial estimate.
+- **State Estimate:** Should be as close as possible to the true initial state. 应该尽可能接近真实的初始状态。
+- **Covariance Matrix:** Reflect the confidence in the initial estimate. 反映对初始估计的信心。
 
-#### 1.4.1.6.3. Numerical Stability
+#### 1.4.1.6.3. Numerical Stability 数值稳定性
 
-- **Covariance Matrix Symmetry:** Ensure that \(\mathbf{P}\) remains symmetric and positive semi-definite.
-- **Avoiding Divergence:** Monitor innovations (measurement residuals) to detect divergence.
+- **Covariance Matrix Symmetry 协方差矩阵对称性:** Ensure that \(\mathbf{P}\) remains symmetric and positive semi-definite. 确保\(\mathbf{P}\)保持对称和正半确定性。
+- **Avoiding Divergence 避免发散:** Monitor innovations (measurement residuals) to detect divergence. 监测新息（测量残差）以检测差异。
 
 
 
-As the conclusion, the Kalman Filter and its variants are powerful tools for state estimation in various systems, especially when dealing with uncertainties and noise. By selecting the appropriate variant based on the system's characteristics and application requirements, one can achieve robust and accurate estimation results.
+As the conclusion, the Kalman Filter and its variants are powerful tools for state estimation in various systems, especially when dealing with uncertainties and noise. By selecting the appropriate variant based on the system's characteristics and application requirements, one can achieve robust and accurate estimation results. 综上所述，卡尔曼滤波器及其变体是各种系统状态估计的有力工具，特别是在处理不确定性和噪声时。通过根据系统的特点和应用需求选择合适的变量，可以获得鲁棒和准确的估计结果。
 
-Understanding the mathematical foundations, assumptions, and limitations of each filter variant is crucial for successful implementation. Continuous advancements in filter design and computation methods are expanding their applicability to increasingly complex and nonlinear systems.
+Understanding the mathematical foundations, assumptions, and limitations of each filter variant is crucial for successful implementation. Continuous advancements in filter design and computation methods are expanding their applicability to increasingly complex and nonlinear systems. 了解每个过滤器变体的数学基础、假设和限制对于成功实现至关重要。滤波器设计和计算方法的不断进步扩大了它们在日益复杂和非线性系统中的适用性。
 
 
 
@@ -1040,3 +1237,125 @@ This repository is released under the MIT license. See [LICENSE](./LICENSE) for 
 
 ## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=yimouwu/Robotics-and-Embodied-AI-Review&type=Date)](https://www.star-history.com/#yimouwu/Robotics-and-Embodied-AI-Review&Date)
+
+
+
+
+---
+
+## **3. 机器学习与强化学习 (Machine Learning and Reinforcement Learning)**
+
+### **中文**
+**机器学习**是通过数据训练模型以完成任务的技术，而**强化学习**是一种特殊的机器学习方法，旨在通过试错学习找到最优策略，以最大化长期奖励。
+
+- **机器学习**：
+  - 分类：监督学习、无监督学习、半监督学习。
+  - 常用模型：支持向量机、决策树、神经网络。
+  - 应用：目标检测、语音控制、路径规划。
+- **强化学习**：
+  - 使用**奖励信号**进行学习。
+  - 框架：基于 MDP，策略优化（如 Q-learning 和深度强化学习）。
+  - 应用：机器人控制、自动驾驶、游戏 AI。
+
+### **English**
+**Machine Learning** involves training models using data to perform tasks, while **Reinforcement Learning** is a special branch of machine learning that focuses on finding optimal policies through trial and error to maximize long-term rewards.
+
+- **Machine Learning**:
+  - Categories: Supervised, unsupervised, and semi-supervised learning.
+  - Common models: SVMs, decision trees, neural networks.
+  - Applications: Object detection, voice control, path planning.
+- **Reinforcement Learning**:
+  - Learns through **reward signals**.
+  - Framework: Based on MDP, policy optimization (e.g., Q-learning and deep RL).
+  - Applications: Robot control, autonomous driving, game AI.
+
+---
+
+## **4. 动力学与控制 (Dynamics and Control)**
+
+### **中文**
+机器人学中的**动力学与控制**研究如何在物理环境中描述和控制机器人运动。它是实现精确操作和稳定行为的核心。
+
+- **动力学**：
+  - 使用牛顿力学或拉格朗日力学描述机器人运动。
+  - 包括刚体动力学、关节运动学。
+- **控制方法**：
+  - PID 控制：经典的比例-积分-微分控制。
+  - Model Predictive Control (MPC)：前瞻性优化控制方法。
+- **应用**：
+  - 机械臂轨迹控制。
+  - 轮式机器人运动控制。
+
+### **English**
+**Dynamics and Control** in robotics focus on describing and controlling robot motion in physical environments. It is essential for achieving precise operations and stable behaviors.
+
+- **Dynamics**:
+  - Describes robot motion using Newtonian or Lagrangian mechanics.
+  - Includes rigid body dynamics and joint kinematics.
+- **Control Techniques**:
+  - PID Control: Classical proportional-integral-derivative control.
+  - Model Predictive Control (MPC): A forward-looking optimization method.
+- **Applications**:
+  - Trajectory control of robotic arms.
+  - Motion control of wheeled robots.
+
+---
+
+## **5. SLAM（同步定位与建图）**
+
+### **中文**
+**同步定位与建图 (SLAM)** 是机器人在未知环境中构建地图并同时确定自身位置的关键技术。
+
+- **核心问题**：
+  - 机器人如何同时**构建地图**和**定位自身**？
+- **常见方法**：
+  - 激光雷达 SLAM（如 Gmapping、Cartographer）。
+  - 视觉 SLAM（如 ORB-SLAM、RTAB-Map）。
+- **应用**：
+  - 无人驾驶。
+  - 室内导航。
+
+### **English**
+**Simultaneous Localization and Mapping (SLAM)** is a key technique that enables robots to construct a map of an unknown environment while simultaneously determining their own position.
+
+- **Core Problem**:
+  - How can the robot **build a map** and **locate itself** at the same time?
+- **Common Methods**:
+  - LiDAR-based SLAM (e.g., Gmapping, Cartographer).
+  - Vision-based SLAM (e.g., ORB-SLAM, RTAB-Map).
+- **Applications**:
+  - Autonomous driving.
+  - Indoor navigation.
+
+---
+
+## **6. 具身智能中的认知与交互**
+
+### **中文**
+具身智能不仅关注机器人的物理行为，还强调与环境和人类的交互能力，包括感知、学习、决策和语言理解。
+
+- **感知**：通过传感器（如相机、激光雷达）感知环境。
+- **交互**：实现自然语言处理、手势识别等。
+- **学习**：通过深度学习或强化学习改进行为。
+
+### **English**
+Embodied intelligence focuses not only on the robot's physical actions but also on its ability to interact with the environment and humans, including perception, learning, decision-making, and language understanding.
+
+- **Perception**: Using sensors (e.g., cameras, LiDAR) to perceive the environment.
+- **Interaction**: Achieving natural language processing, gesture recognition, etc.
+- **Learning**: Improving behavior through deep learning or reinforcement learning.
+
+---
+
+### **总结 (Summary)**
+
+机器人学和具身智能的基础知识可以分为以下关键领域（Key Areas）：
+
+1. **马尔可夫过程 (Markov Process)**：描述随机系统的演化。
+2. **卡尔曼滤波 (Kalman Filter)**：优化动态系统状态估计。
+3. **机器学习与强化学习 (Machine Learning & RL)**：实现智能控制与决策。
+4. **动力学与控制 (Dynamics & Control)**：描述和控制机器人运动。
+5. **SLAM**：同步定位与建图。
+6. **认知与交互 (Cognition & Interaction)**：机器人与环境、人类的智能交互。
+
+这些知识构成了机器人学与具身智能的理论和技术基础，无论是用于研究还是工程应用，都十分重要。
