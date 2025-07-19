@@ -404,6 +404,8 @@ The configuration of a robot manipulator is determined by joint angles (variable
 
 ### 1.4.1 Kalman Filter - 卡尔曼滤波器 <a id="Kalman-Filter"></a>
 
+ ###### - [卡尔曼滤波从理论到实践 华工机器人实验室](https://www.bilibili.com/video/BV1Rh41117MT?spm_id_from=333.788.videopod.episodes&vd_source=180b6da13847c26de9d19ac71e61c7fe&p=2) 课程分为‘滤波概要’，‘基本滤波知识储备’，‘通俗公式理解’和‘从理论到实践’四个章节。适合新手入门。
+
 ### Introduction
 
 The **Kalman Filter** is a mathematical algorithm that provides an efficient computational solution to estimate the state of a dynamic system from a series of incomplete and noisy measurements. It is widely used in control systems, navigation, signal processing, and econometrics due to its ability to extract useful information from noisy data. **卡尔曼滤波**是一种数学算法，它提供了一种有效的计算解决方案，从一系列不完整和有噪声的测量中估计动态系统的状态。由于它能够从噪声数据中提取有用的信息，因此被广泛应用于控制系统、导航、信号处理和计量经济学中。
@@ -1241,7 +1243,7 @@ This repository is released under the MIT license. See [LICENSE](./LICENSE) for 
 
 
 
----
+<!-- ---
 
 ## **3. 机器学习与强化学习 (Machine Learning and Reinforcement Learning)**
 
@@ -1358,4 +1360,4 @@ Embodied intelligence focuses not only on the robot's physical actions but also 
 5. **SLAM**：同步定位与建图。
 6. **认知与交互 (Cognition & Interaction)**：机器人与环境、人类的智能交互。
 
-这些知识构成了机器人学与具身智能的理论和技术基础，无论是用于研究还是工程应用，都十分重要。
+这些知识构成了机器人学与具身智能的理论和技术基础，无论是用于研究还是工程应用，都十分重要。 -->
