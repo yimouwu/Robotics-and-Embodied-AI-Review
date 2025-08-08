@@ -109,6 +109,7 @@
       <li><a href="#Computer-Vision">3.3 Computer Vision - 计算机视觉</a></li>
       <li><a href="#Vision-Language-Model/Vision-Language-Action">3.4 Vision Language Model/Vision Language Action Model - 视觉-语言模型/视觉-语言-动作模型</a></li>
       <li><a href="#Agent">3.5 Agent - 智能体</a></li>
+      <li><a href="#Magnetic-Localization">3.6 Magnetic Localization - 磁定位</a></li>
     </ul>
   </li>
   
@@ -1809,6 +1810,16 @@ These formats can be classified as **"object model description files in robot si
   **关键词**
 
   - 闭环规划评估架构, 大型语言模型（LLM）, 视觉语言模型（VLM）, 部分可观测马尔可夫决策过程（POMDP）, 机器人任务执行, 动态环境, 多机器人协作, 计划-执行-评估循环, 环境记忆与置信状态, 开源模型应用
+
+
+
+
+## 3.6 Magnetic Localization - 磁定位<a id="Magnetic-Localization"></a>
+
+
+
+
+
 
 
 
